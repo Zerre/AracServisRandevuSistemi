@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AracServisRandevuSistemi.Kutuphane
 {
-    public class Calisan
+    public class Liftler
     {
     }
 }
