@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AracServisRandevuSistemi.Kutuphane", "AracServisRandevuSistemi.Kutuphane\AracServisRandevuSistemi.Kutuphane.csproj", "{C1AE84BC-734C-4405-BA63-D6DDC33B67C8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AracServisRandevuSistemi.Data", "AracServisRandevuSistemi.Data\AracServisRandevuSistemi.Data.csproj", "{B3753D8E-31E9-4DF3-85D8-FE16CAB948C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AracServisRandevuSistemi.WinForm", "AracServisRandevuSistemi.WinForm\AracServisRandevuSistemi.WinForm.csproj", "{4E55BFD0-C9E2-4D2E-A8BA-EEDFEE36F234}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{C1AE84BC-734C-4405-BA63-D6DDC33B67C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1AE84BC-734C-4405-BA63-D6DDC33B67C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1AE84BC-734C-4405-BA63-D6DDC33B67C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3753D8E-31E9-4DF3-85D8-FE16CAB948C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3753D8E-31E9-4DF3-85D8-FE16CAB948C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3753D8E-31E9-4DF3-85D8-FE16CAB948C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3753D8E-31E9-4DF3-85D8-FE16CAB948C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E55BFD0-C9E2-4D2E-A8BA-EEDFEE36F234}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E55BFD0-C9E2-4D2E-A8BA-EEDFEE36F234}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E55BFD0-C9E2-4D2E-A8BA-EEDFEE36F234}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E55BFD0-C9E2-4D2E-A8BA-EEDFEE36F234}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
