@@ -8,5 +8,8 @@ namespace AracServisRandevuSistemi.Kutuphane
 {
     public class CalisanGorev
     {
+        public int gorevId { get; set; }
+        public string gorevAdi { get; set; }
+        
     }
 }

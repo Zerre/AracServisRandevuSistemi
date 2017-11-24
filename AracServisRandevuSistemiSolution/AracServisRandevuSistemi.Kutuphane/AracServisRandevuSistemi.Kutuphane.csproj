@@ -46,10 +46,10 @@
     <Compile Include="AracModelYili.cs" />
     <Compile Include="Musteri_Arac.cs" />
     <Compile Include="CalisanGorev.cs" />
-    <Compile Include="Calisanlar.cs" />
+    <Compile Include="Calisan.cs" />
     <Compile Include="Liftler.cs" />
-    <Compile Include="Musteriler.cs" />
-    <Compile Include="Randevular.cs" />
+    <Compile Include="Musteri.cs" />
+    <Compile Include="Randevu.cs" />
     <Compile Include="RandevuSaatleri.cs" />
     <Compile Include="YapilanIslemler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

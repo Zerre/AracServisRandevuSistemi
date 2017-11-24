@@ -8,5 +8,9 @@ namespace AracServisRandevuSistemi.Kutuphane
 {
     public class YapilanIslemler
     {
+        public int yapilanIslemlerId { get; set; }
+        public Randevu randevu { get; set; }
+        public string yapilanIslemler { get; set; }
+
     }
 }
