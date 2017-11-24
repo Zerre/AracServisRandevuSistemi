@@ -8,5 +8,7 @@ namespace AracServisRandevuSistemi.Kutuphane
 {
     public class AracModelYili  
     {
+        public int yilId { get; set; }
+        public int aracinModelYili { get; set; }
     }
 }

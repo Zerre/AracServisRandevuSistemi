@@ -8,6 +8,7 @@ namespace AracServisRandevuSistemi.Kutuphane
 {
     public class AracMarka
     {
-        int x = 1; //Deneme bir ibram
+        public int aracMarkaId { get; set; }
+        public string markaAdi { get; set; }
     }
 }

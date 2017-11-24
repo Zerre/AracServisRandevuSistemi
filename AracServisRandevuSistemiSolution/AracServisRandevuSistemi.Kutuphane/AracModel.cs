@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace AracServisRandevuSistemi.Kutuphane
 {
-    public class AracModel
+    public class AracModel 
     {
+        public int modelId { get; set; }
+        public string modelAdi { get; set; }
+        public AracMarka aracMarkasi { get; set; }
+
     }
 }
