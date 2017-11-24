@@ -8,6 +8,13 @@ namespace AracServisRandevuSistemi.Kutuphane
 {
     public class Randevu
     {
-
+        public int randevuId { get; set; }
+        public Musteri_Arac musteriAraci { get; set; }
+        public Liftler lift { get; set; }
+        public RandevuSaati randevuSaati { get; set; }
+        public string yapilacakIslem { get; set; }
+        public bool saatGectiMi { get; set; }
+        public bool bakimYapildiMi { get; set; }
+        public Calisan calisan { get; set; }
     }
 }

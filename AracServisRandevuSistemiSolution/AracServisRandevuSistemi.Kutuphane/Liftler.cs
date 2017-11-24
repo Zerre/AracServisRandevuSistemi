@@ -8,5 +8,7 @@ namespace AracServisRandevuSistemi.Kutuphane
 {
     public class Liftler
     {
+        public int liftId { get; set; }
+        public string liftAdi { get; set; }
     }
 }
