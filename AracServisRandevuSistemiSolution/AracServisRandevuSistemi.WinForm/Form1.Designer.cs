@@ -30,22 +30,43 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.btnLift3 = new System.Windows.Forms.Button();
+            this.btnLift2 = new System.Windows.Forms.Button();
+            this.btnLift1 = new System.Windows.Forms.Button();
+            this.btnLift3_17_18 = new System.Windows.Forms.Button();
+            this.btnLift2_17_18 = new System.Windows.Forms.Button();
+            this.btnLift1_17_18 = new System.Windows.Forms.Button();
+            this.btnLift3_16_17 = new System.Windows.Forms.Button();
+            this.btnLift2_16_17 = new System.Windows.Forms.Button();
+            this.btnLift1_16_17 = new System.Windows.Forms.Button();
+            this.btnLift3_15_16 = new System.Windows.Forms.Button();
+            this.btnLift2_15_16 = new System.Windows.Forms.Button();
+            this.btnLift1_15_16 = new System.Windows.Forms.Button();
+            this.btnLift3_14_15 = new System.Windows.Forms.Button();
+            this.btnLift2_14_15 = new System.Windows.Forms.Button();
+            this.btnLift1_14_15 = new System.Windows.Forms.Button();
+            this.btnLift3_13_14 = new System.Windows.Forms.Button();
+            this.btnLift2_13_14 = new System.Windows.Forms.Button();
+            this.btnLift1_13_14 = new System.Windows.Forms.Button();
+            this.btnLift3_11_12 = new System.Windows.Forms.Button();
+            this.btnLift2_11_12 = new System.Windows.Forms.Button();
+            this.btnLift1_11_12 = new System.Windows.Forms.Button();
+            this.btnLift3_10_11 = new System.Windows.Forms.Button();
+            this.btnLift2_10_11 = new System.Windows.Forms.Button();
+            this.btnLift1_10_11 = new System.Windows.Forms.Button();
+            this.btnLift3_9_10 = new System.Windows.Forms.Button();
+            this.btnLift2_9_10 = new System.Windows.Forms.Button();
+            this.btnLift1_9_10 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.pnlArac = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.lstAracModel = new System.Windows.Forms.ListBox();
             this.cmbAracMarka = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtPlakaNo = new System.Windows.Forms.TextBox();
@@ -53,7 +74,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtMusteriAdi = new System.Windows.Forms.TextBox();
@@ -62,6 +82,9 @@
             this.txtIletisimNo = new System.Windows.Forms.TextBox();
             this.txtFirmaAdi = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.btnTumRandevular = new System.Windows.Forms.Button();
             this.lstVwRandevuAra = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -78,9 +101,7 @@
             this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
-            this.btnTumRandevular = new System.Windows.Forms.Button();
-            this.label16 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -99,125 +120,370 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1284, 647);
+            this.tabControl1.Size = new System.Drawing.Size(1284, 664);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
-            this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.panel1);
             this.tabPage1.Controls.Add(this.pnlArac);
             this.tabPage1.Controls.Add(this.pnlMusteri);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1276, 621);
+            this.tabPage1.Size = new System.Drawing.Size(1276, 638);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Randevu Oluştur";
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(290, 352);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(274, 27);
+            this.dateTimePicker1.TabIndex = 6;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(103)))), ((int)(((byte)(178)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(438, 421);
+            this.button1.Location = new System.Drawing.Point(247, 442);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(350, 60);
             this.button1.TabIndex = 10;
             this.button1.Text = "KAYDET";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(224)))), ((int)(((byte)(237)))));
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.dateTimePicker1);
+            this.panel1.Controls.Add(this.btnLift3);
+            this.panel1.Controls.Add(this.btnLift2);
+            this.panel1.Controls.Add(this.btnLift1);
+            this.panel1.Controls.Add(this.btnLift3_17_18);
+            this.panel1.Controls.Add(this.btnLift2_17_18);
+            this.panel1.Controls.Add(this.btnLift1_17_18);
+            this.panel1.Controls.Add(this.btnLift3_16_17);
+            this.panel1.Controls.Add(this.btnLift2_16_17);
+            this.panel1.Controls.Add(this.btnLift1_16_17);
+            this.panel1.Controls.Add(this.btnLift3_15_16);
+            this.panel1.Controls.Add(this.btnLift2_15_16);
+            this.panel1.Controls.Add(this.btnLift1_15_16);
+            this.panel1.Controls.Add(this.btnLift3_14_15);
+            this.panel1.Controls.Add(this.btnLift2_14_15);
+            this.panel1.Controls.Add(this.btnLift1_14_15);
+            this.panel1.Controls.Add(this.btnLift3_13_14);
+            this.panel1.Controls.Add(this.btnLift2_13_14);
+            this.panel1.Controls.Add(this.btnLift1_13_14);
+            this.panel1.Controls.Add(this.btnLift3_11_12);
+            this.panel1.Controls.Add(this.btnLift2_11_12);
+            this.panel1.Controls.Add(this.btnLift1_11_12);
+            this.panel1.Controls.Add(this.btnLift3_10_11);
+            this.panel1.Controls.Add(this.btnLift2_10_11);
+            this.panel1.Controls.Add(this.btnLift1_10_11);
+            this.panel1.Controls.Add(this.btnLift3_9_10);
+            this.panel1.Controls.Add(this.btnLift2_9_10);
+            this.panel1.Controls.Add(this.btnLift1_9_10);
             this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.comboBox2);
-            this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.comboBox3);
-            this.panel1.Location = new System.Drawing.Point(819, 68);
+            this.panel1.Location = new System.Drawing.Point(398, 6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(334, 309);
+            this.panel1.Size = new System.Drawing.Size(870, 622);
             this.panel1.TabIndex = 9;
             // 
-            // dateTimePicker1
+            // btnLift3
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(101, 52);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(230, 20);
-            this.dateTimePicker1.TabIndex = 6;
+            this.btnLift3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift3.Location = new System.Drawing.Point(3, 214);
+            this.btnLift3.Name = "btnLift3";
+            this.btnLift3.Size = new System.Drawing.Size(157, 75);
+            this.btnLift3.TabIndex = 7;
+            this.btnLift3.Text = "LİFT 3";
+            this.btnLift3.UseVisualStyleBackColor = true;
+            // 
+            // btnLift2
+            // 
+            this.btnLift2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift2.Location = new System.Drawing.Point(3, 134);
+            this.btnLift2.Name = "btnLift2";
+            this.btnLift2.Size = new System.Drawing.Size(157, 75);
+            this.btnLift2.TabIndex = 7;
+            this.btnLift2.Text = "LİFT 2";
+            this.btnLift2.UseVisualStyleBackColor = true;
+            // 
+            // btnLift1
+            // 
+            this.btnLift1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift1.Location = new System.Drawing.Point(3, 54);
+            this.btnLift1.Name = "btnLift1";
+            this.btnLift1.Size = new System.Drawing.Size(157, 75);
+            this.btnLift1.TabIndex = 7;
+            this.btnLift1.Text = "LİFT 1";
+            this.btnLift1.UseVisualStyleBackColor = true;
+            // 
+            // btnLift3_17_18
+            // 
+            this.btnLift3_17_18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift3_17_18.Location = new System.Drawing.Point(751, 215);
+            this.btnLift3_17_18.Name = "btnLift3_17_18";
+            this.btnLift3_17_18.Size = new System.Drawing.Size(75, 75);
+            this.btnLift3_17_18.TabIndex = 6;
+            this.btnLift3_17_18.Text = "17:00-18:00";
+            this.btnLift3_17_18.UseVisualStyleBackColor = true;
+            // 
+            // btnLift2_17_18
+            // 
+            this.btnLift2_17_18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift2_17_18.Location = new System.Drawing.Point(751, 135);
+            this.btnLift2_17_18.Name = "btnLift2_17_18";
+            this.btnLift2_17_18.Size = new System.Drawing.Size(75, 75);
+            this.btnLift2_17_18.TabIndex = 6;
+            this.btnLift2_17_18.Text = "17:00-18:00";
+            this.btnLift2_17_18.UseVisualStyleBackColor = true;
+            // 
+            // btnLift1_17_18
+            // 
+            this.btnLift1_17_18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift1_17_18.Location = new System.Drawing.Point(751, 55);
+            this.btnLift1_17_18.Name = "btnLift1_17_18";
+            this.btnLift1_17_18.Size = new System.Drawing.Size(75, 75);
+            this.btnLift1_17_18.TabIndex = 6;
+            this.btnLift1_17_18.Text = "17:00-18:00";
+            this.btnLift1_17_18.UseVisualStyleBackColor = true;
+            // 
+            // btnLift3_16_17
+            // 
+            this.btnLift3_16_17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift3_16_17.Location = new System.Drawing.Point(670, 215);
+            this.btnLift3_16_17.Name = "btnLift3_16_17";
+            this.btnLift3_16_17.Size = new System.Drawing.Size(75, 75);
+            this.btnLift3_16_17.TabIndex = 6;
+            this.btnLift3_16_17.Text = "16:00-17:00";
+            this.btnLift3_16_17.UseVisualStyleBackColor = true;
+            // 
+            // btnLift2_16_17
+            // 
+            this.btnLift2_16_17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift2_16_17.Location = new System.Drawing.Point(670, 135);
+            this.btnLift2_16_17.Name = "btnLift2_16_17";
+            this.btnLift2_16_17.Size = new System.Drawing.Size(75, 75);
+            this.btnLift2_16_17.TabIndex = 6;
+            this.btnLift2_16_17.Text = "16:00-17:00";
+            this.btnLift2_16_17.UseVisualStyleBackColor = true;
+            // 
+            // btnLift1_16_17
+            // 
+            this.btnLift1_16_17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift1_16_17.Location = new System.Drawing.Point(670, 55);
+            this.btnLift1_16_17.Name = "btnLift1_16_17";
+            this.btnLift1_16_17.Size = new System.Drawing.Size(75, 75);
+            this.btnLift1_16_17.TabIndex = 6;
+            this.btnLift1_16_17.Text = "16:00-17:00";
+            this.btnLift1_16_17.UseVisualStyleBackColor = true;
+            // 
+            // btnLift3_15_16
+            // 
+            this.btnLift3_15_16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift3_15_16.Location = new System.Drawing.Point(589, 215);
+            this.btnLift3_15_16.Name = "btnLift3_15_16";
+            this.btnLift3_15_16.Size = new System.Drawing.Size(75, 75);
+            this.btnLift3_15_16.TabIndex = 6;
+            this.btnLift3_15_16.Text = "15:00-16:00";
+            this.btnLift3_15_16.UseVisualStyleBackColor = true;
+            // 
+            // btnLift2_15_16
+            // 
+            this.btnLift2_15_16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift2_15_16.Location = new System.Drawing.Point(589, 135);
+            this.btnLift2_15_16.Name = "btnLift2_15_16";
+            this.btnLift2_15_16.Size = new System.Drawing.Size(75, 75);
+            this.btnLift2_15_16.TabIndex = 6;
+            this.btnLift2_15_16.Text = "15:00-16:00";
+            this.btnLift2_15_16.UseVisualStyleBackColor = true;
+            // 
+            // btnLift1_15_16
+            // 
+            this.btnLift1_15_16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift1_15_16.Location = new System.Drawing.Point(589, 55);
+            this.btnLift1_15_16.Name = "btnLift1_15_16";
+            this.btnLift1_15_16.Size = new System.Drawing.Size(75, 75);
+            this.btnLift1_15_16.TabIndex = 6;
+            this.btnLift1_15_16.Text = "15:00-16:00";
+            this.btnLift1_15_16.UseVisualStyleBackColor = true;
+            // 
+            // btnLift3_14_15
+            // 
+            this.btnLift3_14_15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift3_14_15.Location = new System.Drawing.Point(508, 215);
+            this.btnLift3_14_15.Name = "btnLift3_14_15";
+            this.btnLift3_14_15.Size = new System.Drawing.Size(75, 75);
+            this.btnLift3_14_15.TabIndex = 6;
+            this.btnLift3_14_15.Text = "14:00-15:00";
+            this.btnLift3_14_15.UseVisualStyleBackColor = true;
+            // 
+            // btnLift2_14_15
+            // 
+            this.btnLift2_14_15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift2_14_15.Location = new System.Drawing.Point(508, 135);
+            this.btnLift2_14_15.Name = "btnLift2_14_15";
+            this.btnLift2_14_15.Size = new System.Drawing.Size(75, 75);
+            this.btnLift2_14_15.TabIndex = 6;
+            this.btnLift2_14_15.Text = "14:00-15:00";
+            this.btnLift2_14_15.UseVisualStyleBackColor = true;
+            // 
+            // btnLift1_14_15
+            // 
+            this.btnLift1_14_15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift1_14_15.Location = new System.Drawing.Point(508, 55);
+            this.btnLift1_14_15.Name = "btnLift1_14_15";
+            this.btnLift1_14_15.Size = new System.Drawing.Size(75, 75);
+            this.btnLift1_14_15.TabIndex = 6;
+            this.btnLift1_14_15.Text = "14:00-15:00";
+            this.btnLift1_14_15.UseVisualStyleBackColor = true;
+            // 
+            // btnLift3_13_14
+            // 
+            this.btnLift3_13_14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift3_13_14.Location = new System.Drawing.Point(427, 215);
+            this.btnLift3_13_14.Name = "btnLift3_13_14";
+            this.btnLift3_13_14.Size = new System.Drawing.Size(75, 75);
+            this.btnLift3_13_14.TabIndex = 6;
+            this.btnLift3_13_14.Text = "13:00-14:00";
+            this.btnLift3_13_14.UseVisualStyleBackColor = true;
+            // 
+            // btnLift2_13_14
+            // 
+            this.btnLift2_13_14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift2_13_14.Location = new System.Drawing.Point(427, 135);
+            this.btnLift2_13_14.Name = "btnLift2_13_14";
+            this.btnLift2_13_14.Size = new System.Drawing.Size(75, 75);
+            this.btnLift2_13_14.TabIndex = 6;
+            this.btnLift2_13_14.Text = "13:00-14:00";
+            this.btnLift2_13_14.UseVisualStyleBackColor = true;
+            // 
+            // btnLift1_13_14
+            // 
+            this.btnLift1_13_14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift1_13_14.Location = new System.Drawing.Point(427, 55);
+            this.btnLift1_13_14.Name = "btnLift1_13_14";
+            this.btnLift1_13_14.Size = new System.Drawing.Size(75, 75);
+            this.btnLift1_13_14.TabIndex = 6;
+            this.btnLift1_13_14.Text = "13:00-14:00";
+            this.btnLift1_13_14.UseVisualStyleBackColor = true;
+            // 
+            // btnLift3_11_12
+            // 
+            this.btnLift3_11_12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift3_11_12.Location = new System.Drawing.Point(346, 214);
+            this.btnLift3_11_12.Name = "btnLift3_11_12";
+            this.btnLift3_11_12.Size = new System.Drawing.Size(75, 75);
+            this.btnLift3_11_12.TabIndex = 6;
+            this.btnLift3_11_12.Text = "11:00-12:00";
+            this.btnLift3_11_12.UseVisualStyleBackColor = true;
+            // 
+            // btnLift2_11_12
+            // 
+            this.btnLift2_11_12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift2_11_12.Location = new System.Drawing.Point(346, 134);
+            this.btnLift2_11_12.Name = "btnLift2_11_12";
+            this.btnLift2_11_12.Size = new System.Drawing.Size(75, 75);
+            this.btnLift2_11_12.TabIndex = 6;
+            this.btnLift2_11_12.Text = "11:00-12:00";
+            this.btnLift2_11_12.UseVisualStyleBackColor = true;
+            // 
+            // btnLift1_11_12
+            // 
+            this.btnLift1_11_12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift1_11_12.Location = new System.Drawing.Point(346, 54);
+            this.btnLift1_11_12.Name = "btnLift1_11_12";
+            this.btnLift1_11_12.Size = new System.Drawing.Size(75, 75);
+            this.btnLift1_11_12.TabIndex = 6;
+            this.btnLift1_11_12.Text = "11:00-12:00";
+            this.btnLift1_11_12.UseVisualStyleBackColor = true;
+            // 
+            // btnLift3_10_11
+            // 
+            this.btnLift3_10_11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift3_10_11.Location = new System.Drawing.Point(265, 214);
+            this.btnLift3_10_11.Name = "btnLift3_10_11";
+            this.btnLift3_10_11.Size = new System.Drawing.Size(75, 75);
+            this.btnLift3_10_11.TabIndex = 6;
+            this.btnLift3_10_11.Text = "10:00-11:00";
+            this.btnLift3_10_11.UseVisualStyleBackColor = true;
+            // 
+            // btnLift2_10_11
+            // 
+            this.btnLift2_10_11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift2_10_11.Location = new System.Drawing.Point(265, 134);
+            this.btnLift2_10_11.Name = "btnLift2_10_11";
+            this.btnLift2_10_11.Size = new System.Drawing.Size(75, 75);
+            this.btnLift2_10_11.TabIndex = 6;
+            this.btnLift2_10_11.Text = "10:00-11:00";
+            this.btnLift2_10_11.UseVisualStyleBackColor = true;
+            // 
+            // btnLift1_10_11
+            // 
+            this.btnLift1_10_11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift1_10_11.Location = new System.Drawing.Point(265, 54);
+            this.btnLift1_10_11.Name = "btnLift1_10_11";
+            this.btnLift1_10_11.Size = new System.Drawing.Size(75, 75);
+            this.btnLift1_10_11.TabIndex = 6;
+            this.btnLift1_10_11.Text = "10:00-11:00";
+            this.btnLift1_10_11.UseVisualStyleBackColor = true;
+            // 
+            // btnLift3_9_10
+            // 
+            this.btnLift3_9_10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift3_9_10.Location = new System.Drawing.Point(184, 214);
+            this.btnLift3_9_10.Name = "btnLift3_9_10";
+            this.btnLift3_9_10.Size = new System.Drawing.Size(75, 75);
+            this.btnLift3_9_10.TabIndex = 6;
+            this.btnLift3_9_10.Text = "09:00-10:00";
+            this.btnLift3_9_10.UseVisualStyleBackColor = true;
+            // 
+            // btnLift2_9_10
+            // 
+            this.btnLift2_9_10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift2_9_10.Location = new System.Drawing.Point(184, 134);
+            this.btnLift2_9_10.Name = "btnLift2_9_10";
+            this.btnLift2_9_10.Size = new System.Drawing.Size(75, 75);
+            this.btnLift2_9_10.TabIndex = 6;
+            this.btnLift2_9_10.Text = "09:00-10:00";
+            this.btnLift2_9_10.UseVisualStyleBackColor = true;
+            // 
+            // btnLift1_9_10
+            // 
+            this.btnLift1_9_10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift1_9_10.Location = new System.Drawing.Point(184, 54);
+            this.btnLift1_9_10.Name = "btnLift1_9_10";
+            this.btnLift1_9_10.Size = new System.Drawing.Size(75, 75);
+            this.btnLift1_9_10.TabIndex = 6;
+            this.btnLift1_9_10.Text = "09:00-10:00";
+            this.btnLift1_9_10.UseVisualStyleBackColor = true;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label10.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label10.Location = new System.Drawing.Point(74, 7);
+            this.label10.Location = new System.Drawing.Point(369, 8);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(183, 22);
             this.label10.TabIndex = 5;
             this.label10.Text = "RANDEVU ZAMANI";
             // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(101, 103);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(230, 21);
-            this.comboBox2.TabIndex = 0;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(15, 161);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(21, 13);
-            this.label12.TabIndex = 5;
-            this.label12.Text = "Lift";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(15, 58);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(80, 13);
-            this.label13.TabIndex = 5;
-            this.label13.Text = "Randevu Günü";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(15, 111);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(78, 13);
-            this.label11.TabIndex = 5;
-            this.label11.Text = "Randevu Saati";
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(101, 153);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(230, 21);
-            this.comboBox3.TabIndex = 0;
-            // 
             // pnlArac
             // 
             this.pnlArac.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(224)))), ((int)(((byte)(237)))));
+            this.pnlArac.Controls.Add(this.textBox1);
             this.pnlArac.Controls.Add(this.label9);
-            this.pnlArac.Controls.Add(this.label7);
-            this.pnlArac.Controls.Add(this.label15);
-            this.pnlArac.Controls.Add(this.label6);
-            this.pnlArac.Controls.Add(this.comboBox1);
-            this.pnlArac.Controls.Add(this.lstAracModel);
-            this.pnlArac.Controls.Add(this.cmbAracMarka);
-            this.pnlArac.Controls.Add(this.label3);
-            this.pnlArac.Controls.Add(this.txtPlakaNo);
-            this.pnlArac.Location = new System.Drawing.Point(483, 68);
+            this.pnlArac.Location = new System.Drawing.Point(8, 320);
             this.pnlArac.Name = "pnlArac";
-            this.pnlArac.Size = new System.Drawing.Size(330, 308);
+            this.pnlArac.Size = new System.Drawing.Size(384, 308);
             this.pnlArac.TabIndex = 8;
             this.pnlArac.Tag = "";
             // 
@@ -226,16 +492,16 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label9.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label9.Location = new System.Drawing.Point(123, 7);
+            this.label9.Location = new System.Drawing.Point(105, 10);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(64, 22);
+            this.label9.Size = new System.Drawing.Size(172, 22);
             this.label9.TabIndex = 5;
-            this.label9.Text = "ARAÇ";
+            this.label9.Text = "Yapılacak İşlemler";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(3, 153);
+            this.label7.Location = new System.Drawing.Point(20, 203);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(66, 13);
             this.label7.TabIndex = 5;
@@ -244,7 +510,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(3, 242);
+            this.label15.Location = new System.Drawing.Point(20, 233);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(55, 13);
             this.label15.TabIndex = 5;
@@ -253,7 +519,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(3, 58);
+            this.label6.Location = new System.Drawing.Point(20, 173);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(72, 13);
             this.label6.TabIndex = 5;
@@ -262,31 +528,23 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(81, 234);
+            this.comboBox1.Location = new System.Drawing.Point(118, 230);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(224, 21);
+            this.comboBox1.Size = new System.Drawing.Size(263, 21);
             this.comboBox1.TabIndex = 0;
-            // 
-            // lstAracModel
-            // 
-            this.lstAracModel.FormattingEnabled = true;
-            this.lstAracModel.Location = new System.Drawing.Point(82, 81);
-            this.lstAracModel.Name = "lstAracModel";
-            this.lstAracModel.Size = new System.Drawing.Size(223, 147);
-            this.lstAracModel.TabIndex = 7;
             // 
             // cmbAracMarka
             // 
             this.cmbAracMarka.FormattingEnabled = true;
-            this.cmbAracMarka.Location = new System.Drawing.Point(81, 52);
+            this.cmbAracMarka.Location = new System.Drawing.Point(118, 170);
             this.cmbAracMarka.Name = "cmbAracMarka";
-            this.cmbAracMarka.Size = new System.Drawing.Size(224, 21);
+            this.cmbAracMarka.Size = new System.Drawing.Size(263, 21);
             this.cmbAracMarka.TabIndex = 0;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 274);
+            this.label3.Location = new System.Drawing.Point(20, 263);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(79, 13);
             this.label3.TabIndex = 5;
@@ -294,36 +552,43 @@
             // 
             // txtPlakaNo
             // 
-            this.txtPlakaNo.Location = new System.Drawing.Point(81, 271);
+            this.txtPlakaNo.Location = new System.Drawing.Point(118, 260);
             this.txtPlakaNo.Name = "txtPlakaNo";
-            this.txtPlakaNo.Size = new System.Drawing.Size(224, 20);
+            this.txtPlakaNo.Size = new System.Drawing.Size(263, 20);
             this.txtPlakaNo.TabIndex = 3;
             // 
             // pnlMusteri
             // 
             this.pnlMusteri.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(224)))), ((int)(((byte)(237)))));
-            this.pnlMusteri.Controls.Add(this.textBox1);
             this.pnlMusteri.Controls.Add(this.label8);
+            this.pnlMusteri.Controls.Add(this.label7);
             this.pnlMusteri.Controls.Add(this.label1);
-            this.pnlMusteri.Controls.Add(this.label14);
+            this.pnlMusteri.Controls.Add(this.label15);
             this.pnlMusteri.Controls.Add(this.label5);
             this.pnlMusteri.Controls.Add(this.label4);
+            this.pnlMusteri.Controls.Add(this.label6);
+            this.pnlMusteri.Controls.Add(this.comboBox1);
             this.pnlMusteri.Controls.Add(this.txtMusteriAdi);
+            this.pnlMusteri.Controls.Add(this.comboBox2);
             this.pnlMusteri.Controls.Add(this.txtMusteriSoyadi);
+            this.pnlMusteri.Controls.Add(this.cmbAracMarka);
             this.pnlMusteri.Controls.Add(this.label2);
+            this.pnlMusteri.Controls.Add(this.label3);
             this.pnlMusteri.Controls.Add(this.txtIletisimNo);
+            this.pnlMusteri.Controls.Add(this.txtPlakaNo);
             this.pnlMusteri.Controls.Add(this.txtFirmaAdi);
-            this.pnlMusteri.Location = new System.Drawing.Point(93, 68);
+            this.pnlMusteri.Location = new System.Drawing.Point(8, 6);
             this.pnlMusteri.Name = "pnlMusteri";
             this.pnlMusteri.Size = new System.Drawing.Size(384, 308);
             this.pnlMusteri.TabIndex = 6;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(118, 168);
+            this.textBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.textBox1.Location = new System.Drawing.Point(0, 46);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(263, 124);
+            this.textBox1.Size = new System.Drawing.Size(384, 262);
             this.textBox1.TabIndex = 6;
             // 
             // label8
@@ -346,15 +611,6 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Adı:";
             // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(20, 226);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(92, 13);
-            this.label14.TabIndex = 5;
-            this.label14.Text = "Yapılacak İşlemler";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -375,14 +631,14 @@
             // 
             // txtMusteriAdi
             // 
-            this.txtMusteriAdi.Location = new System.Drawing.Point(118, 53);
+            this.txtMusteriAdi.Location = new System.Drawing.Point(118, 50);
             this.txtMusteriAdi.Name = "txtMusteriAdi";
             this.txtMusteriAdi.Size = new System.Drawing.Size(263, 20);
             this.txtMusteriAdi.TabIndex = 1;
             // 
             // txtMusteriSoyadi
             // 
-            this.txtMusteriSoyadi.Location = new System.Drawing.Point(118, 82);
+            this.txtMusteriSoyadi.Location = new System.Drawing.Point(118, 80);
             this.txtMusteriSoyadi.Name = "txtMusteriSoyadi";
             this.txtMusteriSoyadi.Size = new System.Drawing.Size(263, 20);
             this.txtMusteriSoyadi.TabIndex = 2;
@@ -398,14 +654,14 @@
             // 
             // txtIletisimNo
             // 
-            this.txtIletisimNo.Location = new System.Drawing.Point(118, 138);
+            this.txtIletisimNo.Location = new System.Drawing.Point(118, 140);
             this.txtIletisimNo.Name = "txtIletisimNo";
             this.txtIletisimNo.Size = new System.Drawing.Size(263, 20);
             this.txtIletisimNo.TabIndex = 4;
             // 
             // txtFirmaAdi
             // 
-            this.txtFirmaAdi.Location = new System.Drawing.Point(118, 112);
+            this.txtFirmaAdi.Location = new System.Drawing.Point(118, 110);
             this.txtFirmaAdi.Name = "txtFirmaAdi";
             this.txtFirmaAdi.Size = new System.Drawing.Size(263, 20);
             this.txtFirmaAdi.TabIndex = 4;
@@ -420,9 +676,45 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1276, 621);
+            this.tabPage2.Size = new System.Drawing.Size(1276, 638);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Randevu Ara";
+            this.tabPage2.Text = "Randevular";
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
+            "İsim Soyisim",
+            "Firma Adı",
+            "Plaka",
+            "İletişim Numarası",
+            "Tarih",
+            "Lift",
+            "Görevli"});
+            this.comboBox4.Location = new System.Drawing.Point(190, 10);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(206, 21);
+            this.comboBox4.TabIndex = 7;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label16.Location = new System.Drawing.Point(6, 6);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(178, 22);
+            this.label16.TabIndex = 6;
+            this.label16.Text = "Arama Seçenekleri";
+            // 
+            // btnTumRandevular
+            // 
+            this.btnTumRandevular.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnTumRandevular.Location = new System.Drawing.Point(1134, 6);
+            this.btnTumRandevular.Name = "btnTumRandevular";
+            this.btnTumRandevular.Size = new System.Drawing.Size(136, 131);
+            this.btnTumRandevular.TabIndex = 5;
+            this.btnTumRandevular.Text = "Tüm Randevular";
+            this.btnTumRandevular.UseVisualStyleBackColor = true;
             // 
             // lstVwRandevuAra
             // 
@@ -445,7 +737,7 @@
             this.lstVwRandevuAra.GridLines = true;
             this.lstVwRandevuAra.Location = new System.Drawing.Point(3, 143);
             this.lstVwRandevuAra.Name = "lstVwRandevuAra";
-            this.lstVwRandevuAra.Size = new System.Drawing.Size(1270, 475);
+            this.lstVwRandevuAra.Size = new System.Drawing.Size(1270, 492);
             this.lstVwRandevuAra.TabIndex = 0;
             this.lstVwRandevuAra.UseCompatibleStateImageBehavior = false;
             this.lstVwRandevuAra.View = System.Windows.Forms.View.Details;
@@ -520,7 +812,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1276, 621);
+            this.tabPage3.Size = new System.Drawing.Size(1276, 638);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Bitirilen İşler";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -530,48 +822,20 @@
             this.fileSystemWatcher1.EnableRaisingEvents = true;
             this.fileSystemWatcher1.SynchronizingObject = this;
             // 
-            // btnTumRandevular
+            // comboBox2
             // 
-            this.btnTumRandevular.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnTumRandevular.Location = new System.Drawing.Point(1134, 6);
-            this.btnTumRandevular.Name = "btnTumRandevular";
-            this.btnTumRandevular.Size = new System.Drawing.Size(136, 131);
-            this.btnTumRandevular.TabIndex = 5;
-            this.btnTumRandevular.Text = "Tüm Randevular";
-            this.btnTumRandevular.UseVisualStyleBackColor = true;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label16.Location = new System.Drawing.Point(6, 6);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(178, 22);
-            this.label16.TabIndex = 6;
-            this.label16.Text = "Arama Seçenekleri";
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
-            "İsim Soyisim",
-            "Firma Adı",
-            "Plaka",
-            "İletişim Numarası",
-            "Tarih",
-            "Lift",
-            "Görevli"});
-            this.comboBox4.Location = new System.Drawing.Point(191, 6);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(206, 21);
-            this.comboBox4.TabIndex = 7;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(118, 200);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(263, 21);
+            this.comboBox2.TabIndex = 0;
             // 
             // frmRandevu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1284, 647);
+            this.ClientSize = new System.Drawing.Size(1284, 664);
             this.Controls.Add(this.tabControl1);
             this.Name = "frmRandevu";
             this.Text = "Araç Servisi Randevu Sistemi";
@@ -594,7 +858,6 @@
 
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.ListBox lstAracModel;
         private System.Windows.Forms.Panel pnlMusteri;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
@@ -606,8 +869,6 @@
         private System.Windows.Forms.TextBox txtPlakaNo;
         private System.Windows.Forms.TextBox txtIletisimNo;
         private System.Windows.Forms.TextBox txtFirmaAdi;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox cmbAracMarka;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
@@ -621,13 +882,9 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.ListView lstVwRandevuAra;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
@@ -645,6 +902,34 @@
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button btnTumRandevular;
+        private System.Windows.Forms.Button btnLift3;
+        private System.Windows.Forms.Button btnLift2;
+        private System.Windows.Forms.Button btnLift1;
+        private System.Windows.Forms.Button btnLift3_17_18;
+        private System.Windows.Forms.Button btnLift2_17_18;
+        private System.Windows.Forms.Button btnLift1_17_18;
+        private System.Windows.Forms.Button btnLift3_16_17;
+        private System.Windows.Forms.Button btnLift2_16_17;
+        private System.Windows.Forms.Button btnLift1_16_17;
+        private System.Windows.Forms.Button btnLift3_15_16;
+        private System.Windows.Forms.Button btnLift2_15_16;
+        private System.Windows.Forms.Button btnLift1_15_16;
+        private System.Windows.Forms.Button btnLift3_14_15;
+        private System.Windows.Forms.Button btnLift2_14_15;
+        private System.Windows.Forms.Button btnLift1_14_15;
+        private System.Windows.Forms.Button btnLift3_13_14;
+        private System.Windows.Forms.Button btnLift2_13_14;
+        private System.Windows.Forms.Button btnLift1_13_14;
+        private System.Windows.Forms.Button btnLift3_11_12;
+        private System.Windows.Forms.Button btnLift2_11_12;
+        private System.Windows.Forms.Button btnLift1_11_12;
+        private System.Windows.Forms.Button btnLift3_10_11;
+        private System.Windows.Forms.Button btnLift2_10_11;
+        private System.Windows.Forms.Button btnLift1_10_11;
+        private System.Windows.Forms.Button btnLift3_9_10;
+        private System.Windows.Forms.Button btnLift2_9_10;
+        private System.Windows.Forms.Button btnLift1_9_10;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }
 

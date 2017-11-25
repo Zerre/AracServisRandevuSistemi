@@ -78,5 +78,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AracServisRandevuSistemi.Data\AracServisRandevuSistemi.Data.csproj">
+      <Project>{b3753d8e-31e9-4df3-85d8-fe16cab948c2}</Project>
+      <Name>AracServisRandevuSistemi.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

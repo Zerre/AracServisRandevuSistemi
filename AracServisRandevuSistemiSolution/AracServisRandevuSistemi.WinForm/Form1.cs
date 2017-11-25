@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AracServisRandevuSistemi.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,18 @@ namespace AracServisRandevuSistemi.WinForm
         public frmRandevu()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DataManager dataManager = new DataManager();
+            //dataManager.ModelYillariniEkle();
+            //MessageBox.Show("Yıllar Eklendi..");
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
