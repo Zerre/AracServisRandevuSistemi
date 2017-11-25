@@ -50,7 +50,7 @@
     <Compile Include="Liftler.cs" />
     <Compile Include="Musteri.cs" />
     <Compile Include="Randevu.cs" />
-    <Compile Include="RandevuSaati.cs" />
+    <Compile Include="RandevuZamani.cs" />
     <Compile Include="YapilanIslemler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

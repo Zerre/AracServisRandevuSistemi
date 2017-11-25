@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AracServisRandevuSistemi.WinForm
 {
-    public partial class Form1 : Form
+    public partial class frmRandevu : Form
     {
-        public Form1()
+        public frmRandevu()
         {
             InitializeComponent();
         }
