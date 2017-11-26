@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace AracServisRandevuSistemi.Kutuphane
 {
-    public class RandevuSaati
+    public class RandevuZamani
     {
         public int randevuSaatId { get; set; }
+        public DateTime randevuGunu { get; set; }
         public string randevuSaati { get; set; }
     }
 }
