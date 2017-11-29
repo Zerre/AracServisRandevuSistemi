@@ -1,4 +1,5 @@
 ﻿using AracServisRandevuSistemi.Data;
+using AracServisRandevuSistemi.Kutuphane;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,19 +31,22 @@ namespace AracServisRandevuSistemi.WinForm
 
         private void frmRandevu_Load(object sender, EventArgs e)
         {
-            foreach (var item in dataManager.aracMarkalariGetir())
+            foreach (var marka in dataManager.aracMarkalariGetir())
             {
-                cmbAracMarka.ValueMember = item.aracMarkaId.ToString();
-                cmbAracMarka.DisplayMember = item.markaAdi;
-                //cmbAracMarka.Items.Add(item.markaAdi);
-                
-
+                cmbAracMarka.Items.Add(marka);
             }
+            //cmbAracMarka.DisplayMember = "MarkaName";
+            //cmbAracMarka.ValueMember = "MarkaId";
+            //cmbAracMarka.DataSource = dataManager.aracMarkalariGetir();
         }
 
-        private void cmbAracMarka_SelectedIndexChanged(object sender, EventArgs e)
+        private void cmbAracMarka_SelectionChangeCommitted(object sender, EventArgs e)
         {
+            AracMarka secilen = (AracMarka)cmbAracMarka.SelectedItem;
 
+            cmbAracModel.ValueMember = "ModelId";
+            cmbAracModel.DisplayMember = "ModelName";
+            cmbAracModel.DataSource = dataManager.aracModelleriGetir(secilen.aracMarkaId);
         }
     }
 }
