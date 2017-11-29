@@ -10,6 +10,5 @@ namespace AracServisRandevuSistemi.Kutuphane
     {
         public int modelId { get; set; }
         public string modelAdi { get; set; }
-        public AracMarka aracMarkasi { get; set; }
     }
 }

@@ -13,5 +13,6 @@ namespace AracServisRandevuSistemi.Kutuphane
         public string musteriSoyadi { get; set; }
         public string firmaAdi { get; set; }
         public string iletisimNumarasi { get; set; }
+        public List<AracModel> araclar { get; set; }
     }
 }

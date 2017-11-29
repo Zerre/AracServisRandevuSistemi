@@ -30,9 +30,9 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.btnLift3 = new System.Windows.Forms.Button();
             this.btnLift2 = new System.Windows.Forms.Button();
             this.btnLift1 = new System.Windows.Forms.Button();
@@ -62,24 +62,25 @@
             this.btnLift1_9_10 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.pnlArac = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.cmbAracMarka = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtPlakaNo = new System.Windows.Forms.TextBox();
-            this.pnlMusteri = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.pnlMusteri = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.txtMusteriAdi = new System.Windows.Forms.TextBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.txtMusteriSoyadi = new System.Windows.Forms.TextBox();
+            this.cmbAracMarka = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.txtIletisimNo = new System.Windows.Forms.TextBox();
+            this.txtPlakaNo = new System.Windows.Forms.TextBox();
             this.txtFirmaAdi = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
@@ -101,7 +102,7 @@
             this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.txtCalisan = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -135,27 +136,6 @@
             this.tabPage1.Size = new System.Drawing.Size(1276, 638);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Randevu Oluştur";
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(290, 352);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(274, 27);
-            this.dateTimePicker1.TabIndex = 6;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(103)))), ((int)(((byte)(178)))));
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(247, 442);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(350, 60);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "KAYDET";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel1
             // 
@@ -194,6 +174,26 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(870, 622);
             this.panel1.TabIndex = 9;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(103)))), ((int)(((byte)(178)))));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button1.Location = new System.Drawing.Point(247, 442);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(350, 60);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "KAYDET";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(290, 352);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(274, 27);
+            this.dateTimePicker1.TabIndex = 6;
             // 
             // btnLift3
             // 
@@ -487,6 +487,15 @@
             this.pnlArac.TabIndex = 8;
             this.pnlArac.Tag = "";
             // 
+            // textBox1
+            // 
+            this.textBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.textBox1.Location = new System.Drawing.Point(0, 46);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(384, 262);
+            this.textBox1.TabIndex = 6;
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -498,68 +507,10 @@
             this.label9.TabIndex = 5;
             this.label9.Text = "Yapılacak İşlemler";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(20, 203);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(66, 13);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "Arac Modeli:";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(20, 233);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(55, 13);
-            this.label15.TabIndex = 5;
-            this.label15.Text = "Model Yılı:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(20, 173);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(72, 13);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Arac Markası:";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(118, 230);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(263, 21);
-            this.comboBox1.TabIndex = 0;
-            // 
-            // cmbAracMarka
-            // 
-            this.cmbAracMarka.FormattingEnabled = true;
-            this.cmbAracMarka.Location = new System.Drawing.Point(118, 170);
-            this.cmbAracMarka.Name = "cmbAracMarka";
-            this.cmbAracMarka.Size = new System.Drawing.Size(263, 21);
-            this.cmbAracMarka.TabIndex = 0;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 263);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Araç Plaka No:";
-            // 
-            // txtPlakaNo
-            // 
-            this.txtPlakaNo.Location = new System.Drawing.Point(118, 260);
-            this.txtPlakaNo.Name = "txtPlakaNo";
-            this.txtPlakaNo.Size = new System.Drawing.Size(263, 20);
-            this.txtPlakaNo.TabIndex = 3;
-            // 
             // pnlMusteri
             // 
             this.pnlMusteri.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(224)))), ((int)(((byte)(237)))));
+            this.pnlMusteri.Controls.Add(this.txtCalisan);
             this.pnlMusteri.Controls.Add(this.label8);
             this.pnlMusteri.Controls.Add(this.label7);
             this.pnlMusteri.Controls.Add(this.label1);
@@ -582,15 +533,6 @@
             this.pnlMusteri.Size = new System.Drawing.Size(384, 308);
             this.pnlMusteri.TabIndex = 6;
             // 
-            // textBox1
-            // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.textBox1.Location = new System.Drawing.Point(0, 46);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(384, 262);
-            this.textBox1.TabIndex = 6;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -602,6 +544,15 @@
             this.label8.TabIndex = 5;
             this.label8.Text = "MÜSTERİ";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(20, 203);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(66, 13);
+            this.label7.TabIndex = 5;
+            this.label7.Text = "Arac Modeli:";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -610,6 +561,15 @@
             this.label1.Size = new System.Drawing.Size(25, 13);
             this.label1.TabIndex = 5;
             this.label1.Text = "Adı:";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(20, 233);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(55, 13);
+            this.label15.TabIndex = 5;
+            this.label15.Text = "Model Yılı:";
             // 
             // label5
             // 
@@ -629,19 +589,52 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "Firma Adı";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(20, 173);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(72, 13);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Arac Markası:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(118, 230);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(248, 21);
+            this.comboBox1.TabIndex = 0;
+            // 
             // txtMusteriAdi
             // 
             this.txtMusteriAdi.Location = new System.Drawing.Point(118, 50);
             this.txtMusteriAdi.Name = "txtMusteriAdi";
-            this.txtMusteriAdi.Size = new System.Drawing.Size(263, 20);
+            this.txtMusteriAdi.Size = new System.Drawing.Size(248, 20);
             this.txtMusteriAdi.TabIndex = 1;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(118, 200);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(248, 21);
+            this.comboBox2.TabIndex = 0;
             // 
             // txtMusteriSoyadi
             // 
             this.txtMusteriSoyadi.Location = new System.Drawing.Point(118, 80);
             this.txtMusteriSoyadi.Name = "txtMusteriSoyadi";
-            this.txtMusteriSoyadi.Size = new System.Drawing.Size(263, 20);
+            this.txtMusteriSoyadi.Size = new System.Drawing.Size(248, 20);
             this.txtMusteriSoyadi.TabIndex = 2;
+            // 
+            // cmbAracMarka
+            // 
+            this.cmbAracMarka.FormattingEnabled = true;
+            this.cmbAracMarka.Location = new System.Drawing.Point(118, 170);
+            this.cmbAracMarka.Name = "cmbAracMarka";
+            this.cmbAracMarka.Size = new System.Drawing.Size(248, 21);
+            this.cmbAracMarka.TabIndex = 0;
             // 
             // label2
             // 
@@ -652,18 +645,34 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Soyadı:";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(20, 263);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(79, 13);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Araç Plaka No:";
+            // 
             // txtIletisimNo
             // 
             this.txtIletisimNo.Location = new System.Drawing.Point(118, 140);
             this.txtIletisimNo.Name = "txtIletisimNo";
-            this.txtIletisimNo.Size = new System.Drawing.Size(263, 20);
+            this.txtIletisimNo.Size = new System.Drawing.Size(248, 20);
             this.txtIletisimNo.TabIndex = 4;
+            // 
+            // txtPlakaNo
+            // 
+            this.txtPlakaNo.Location = new System.Drawing.Point(118, 260);
+            this.txtPlakaNo.Name = "txtPlakaNo";
+            this.txtPlakaNo.Size = new System.Drawing.Size(248, 20);
+            this.txtPlakaNo.TabIndex = 3;
             // 
             // txtFirmaAdi
             // 
             this.txtFirmaAdi.Location = new System.Drawing.Point(118, 110);
             this.txtFirmaAdi.Name = "txtFirmaAdi";
-            this.txtFirmaAdi.Size = new System.Drawing.Size(263, 20);
+            this.txtFirmaAdi.Size = new System.Drawing.Size(248, 20);
             this.txtFirmaAdi.TabIndex = 4;
             // 
             // tabPage2
@@ -822,13 +831,12 @@
             this.fileSystemWatcher1.EnableRaisingEvents = true;
             this.fileSystemWatcher1.SynchronizingObject = this;
             // 
-            // comboBox2
+            // txtCalisan
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(118, 200);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(263, 21);
-            this.comboBox2.TabIndex = 0;
+            this.txtCalisan.Location = new System.Drawing.Point(227, 285);
+            this.txtCalisan.Name = "txtCalisan";
+            this.txtCalisan.Size = new System.Drawing.Size(139, 20);
+            this.txtCalisan.TabIndex = 11;
             // 
             // frmRandevu
             // 
@@ -839,6 +847,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "frmRandevu";
             this.Text = "Araç Servisi Randevu Sistemi";
+            this.Load += new System.EventHandler(this.frmRandevu_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -930,6 +939,7 @@
         private System.Windows.Forms.Button btnLift2_9_10;
         private System.Windows.Forms.Button btnLift1_9_10;
         private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.TextBox txtCalisan;
     }
 }
 

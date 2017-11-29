@@ -43,5 +43,11 @@
     <Compile Include="DataManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AracServisRandevuSistemi.Kutuphane\AracServisRandevuSistemi.Kutuphane.csproj">
+      <Project>{c1ae84bc-734c-4405-ba63-d6ddc33b67c8}</Project>
+      <Name>AracServisRandevuSistemi.Kutuphane</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

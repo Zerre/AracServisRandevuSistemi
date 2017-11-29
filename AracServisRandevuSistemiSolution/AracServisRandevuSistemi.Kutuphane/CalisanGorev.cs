@@ -10,6 +10,6 @@ namespace AracServisRandevuSistemi.Kutuphane
     {
         public int gorevId { get; set; }
         public string gorevAdi { get; set; }
-        
+        public List<Calisan> calisanlar { get; set; }
     }
 }

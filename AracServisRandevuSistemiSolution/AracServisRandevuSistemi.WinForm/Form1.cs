@@ -23,9 +23,11 @@ namespace AracServisRandevuSistemi.WinForm
             DataManager dataManager = new DataManager();
             //dataManager.ModelYillariniEkle();
             //MessageBox.Show("Yıllar Eklendi..");
+
+
         }
 
-        private void tabPage1_Click(object sender, EventArgs e)
+        private void frmRandevu_Load(object sender, EventArgs e)
         {
 
         }

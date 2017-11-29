@@ -8,8 +8,8 @@ namespace AracServisRandevuSistemi.Kutuphane
 {
     public class RandevuZamani
     {
-        public int randevuSaatId { get; set; }
+        public int randevuZamanId { get; set; }
         public DateTime randevuGunu { get; set; }
-        public string randevuSaati { get; set; }
+        public RandevuSaati randevuSaati { get; set; }
     }
 }

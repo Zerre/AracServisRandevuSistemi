@@ -10,7 +10,8 @@ namespace AracServisRandevuSistemi.Kutuphane
     {
         public int musteriAracId { get; set; }
         public Musteri musteri { get; set; }
+        public AracModel arac { get; set; }
+        public AracModelYili modelYili { get; set; }
         public string plakaNo { get; set; }
-        public AracModel_ModelYil aracModelYilId { get; set; }
     }
 }
