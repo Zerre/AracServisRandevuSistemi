@@ -10,7 +10,7 @@ namespace AracServisRandevuSistemi.Data
 {
     public class DataManager
     {
-        private static string connectionString = "Data Source=SamininMakinesi;Initial Catalog=AracServisRandevuSistemi;Integrated Security=True";
+        private static string connectionString = "Data Source=UCHIHA;Initial Catalog=AracServisRandevuSistemi;Integrated Security=True";
 
         private static SqlConnection CreateConnection()
         {
@@ -63,6 +63,30 @@ namespace AracServisRandevuSistemi.Data
 
                 command.ExecuteNonQuery();
             }
+
+
+        }
+
+        public List<AracMarka> aracMarkalariGetir()
+        {
+
+            var aracListesi = new List<AracMarka>();
+            using (var connection = CreateConnection())
+            {
+                var command = new SqlCommand("SELECT * FROM AracMarka ",connection);
+                
+
+                using (var reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        var arac = new AracMarka((int)reader["MarkaId"], reader["MarkaName"].ToString());
+                        aracListesi.Add(arac);
+
+                    }
+                }
+            }
+            return aracListesi;
         }
     }
 }

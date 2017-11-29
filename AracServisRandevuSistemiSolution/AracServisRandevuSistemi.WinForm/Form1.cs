@@ -18,9 +18,10 @@ namespace AracServisRandevuSistemi.WinForm
             InitializeComponent();
         }
 
+        DataManager dataManager = new DataManager();
+
         private void button1_Click(object sender, EventArgs e)
         {
-            DataManager dataManager = new DataManager();
             //dataManager.ModelYillariniEkle();
             //MessageBox.Show("Yıllar Eklendi..");
 
@@ -28,6 +29,18 @@ namespace AracServisRandevuSistemi.WinForm
         }
 
         private void frmRandevu_Load(object sender, EventArgs e)
+        {
+            foreach (var item in dataManager.aracMarkalariGetir())
+            {
+                cmbAracMarka.ValueMember = item.aracMarkaId.ToString();
+                cmbAracMarka.DisplayMember = item.markaAdi;
+                //cmbAracMarka.Items.Add(item.markaAdi);
+                
+
+            }
+        }
+
+        private void cmbAracMarka_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
