@@ -42,14 +42,14 @@
   <ItemGroup>
     <Compile Include="AracMarka.cs" />
     <Compile Include="AracModel.cs" />
-    <Compile Include="AracModel_ModelYil.cs" />
     <Compile Include="AracModelYili.cs" />
     <Compile Include="Musteri_Arac.cs" />
     <Compile Include="CalisanGorev.cs" />
     <Compile Include="Calisan.cs" />
-    <Compile Include="Liftler.cs" />
+    <Compile Include="Lift.cs" />
     <Compile Include="Musteri.cs" />
     <Compile Include="Randevu.cs" />
+    <Compile Include="RandevuSaati.cs" />
     <Compile Include="RandevuZamani.cs" />
     <Compile Include="YapilanIslemler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
