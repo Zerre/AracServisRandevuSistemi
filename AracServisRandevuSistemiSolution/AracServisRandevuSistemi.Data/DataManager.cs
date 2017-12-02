@@ -10,7 +10,7 @@ namespace AracServisRandevuSistemi.Data
 {
     public class DataManager
     {
-        private static string connectionString = "Data Source=DESKTOP-B17TCAO;Initial Catalog=AracServisRandevuSistemi;Integrated Security=True";
+        private static string connectionString = "Data Source=SamininMakinesi;Initial Catalog=AracServisRandevuSistemi;Integrated Security=True";
         private static SqlConnection CreateConnection()
         {
             SqlConnection connection = new SqlConnection(connectionString);
@@ -22,7 +22,7 @@ namespace AracServisRandevuSistemi.Data
         {
             using (SqlConnection connection = CreateConnection())
             {
-                SqlCommand command = new SqlCommand("MusteriEkleVeRandevuOlustur", connection);
+                SqlCommand command = new SqlCommand("RandevuEkle", connection);
                 command.CommandType = System.Data.CommandType.StoredProcedure;
 
                 command.Parameters.AddWithValue("@MusteriAdi", musteri.musteriAdi);
@@ -31,18 +31,18 @@ namespace AracServisRandevuSistemi.Data
                 command.Parameters.AddWithValue("@MusteriIletisimNo", musteri.iletisimNumarasi);
 
                 command.Parameters.AddWithValue("@PlakaNo", musteri_Arac.plakaNo);
-                command.Parameters.AddWithValue("@ModelId", musteri_Arac.musteriAracId);
-                command.Parameters.AddWithValue("@YilId", musteri_Arac.modelYili);
+                command.Parameters.AddWithValue("@ModelId", musteri_Arac.aracModel.modelId);
+                command.Parameters.AddWithValue("@YilId", musteri_Arac.modelYili.yilId);
 
                 command.Parameters.AddWithValue("@RandevuGunu", randevuZamani.randevuGunu);
-                command.Parameters.AddWithValue("@RandevuSaatId", randevuZamani.randevuSaati);
+                command.Parameters.AddWithValue("@RandevuSaatId", randevuZamani.randevuSaati.randevuSaatId);
 
                 command.Parameters.AddWithValue("@LiftId", lift.liftId);
 
                 command.Parameters.AddWithValue("@YapilacakIslemler", randevu.yapilacakIslem);
                 command.Parameters.AddWithValue("@SaatiGectiMi", randevu.saatGectiMi);
                 command.Parameters.AddWithValue("@BakimYapildiMi", randevu.bakimYapildiMi);
-                command.Parameters.AddWithValue("@CalisanId", randevu.calisan);
+                command.Parameters.AddWithValue("@CalisanId", randevu.calisan.calisanId);
 
                 command.ExecuteNonQuery();
             }
@@ -88,13 +88,13 @@ namespace AracServisRandevuSistemi.Data
             }
             return modelListesi;
         }
-        
+
         public List<AracModelYili> modelYiliGetir()
         {
             List<AracModelYili> modelYiliListesi = new List<AracModelYili>();
             using (var connection = CreateConnection())
             {
-                var command = new SqlCommand("SELECT * FROM AracModelYili order by YilId desc" , connection);
+                var command = new SqlCommand("SELECT * FROM AracModelYili order by YilId desc", connection);
 
                 using (var reader = command.ExecuteReader())
                 {
@@ -109,5 +109,50 @@ namespace AracServisRandevuSistemi.Data
             }
             return modelYiliListesi;
         }
+
+        public List<Lift> LiftleriGetir()
+        {
+            List<Lift> liftler = new List<Lift>();
+
+            using (SqlConnection connection = CreateConnection())
+            {
+                SqlCommand command = new SqlCommand("Select * from Liftler", connection);
+
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        Lift lift = new Lift();
+                        lift.liftId = (int)reader["LiftId"];
+                        lift.liftAdi = reader["LiftAdi"].ToString();
+                        liftler.Add(lift); 
+                    }
+                }
+            }
+            return liftler;
+        }
+
+        public List<RandevuSaati> saatleriGetir()
+        {
+            List<RandevuSaati> randevuSaatleri = new List<RandevuSaati>();
+
+            using (SqlConnection connection = CreateConnection())
+            {
+                SqlCommand command = new SqlCommand("Select * from RandevuSaatleri", connection);
+
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        RandevuSaati saat = new RandevuSaati();
+                        saat.randevuSaatId = (int)reader["RandevuSaatId"];
+                        saat.randevuSaat = reader["RandevuSaati"].ToString();
+                        randevuSaatleri.Add(saat); 
+                    }
+                }
+            }
+            return randevuSaatleri;
+        }
+
     }
 }

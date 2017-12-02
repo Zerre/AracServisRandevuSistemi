@@ -31,33 +31,35 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnKaydet = new System.Windows.Forms.Button();
-            this.dateTime = new System.Windows.Forms.DateTimePicker();
-            this.btnLift3_17_18 = new System.Windows.Forms.Button();
-            this.btnLift2_17_18 = new System.Windows.Forms.Button();
-            this.btnLift1_17_18 = new System.Windows.Forms.Button();
-            this.btnLift3_16_17 = new System.Windows.Forms.Button();
-            this.btnLift2_16_17 = new System.Windows.Forms.Button();
-            this.btnLift1_16_17 = new System.Windows.Forms.Button();
-            this.btnLift3_15_16 = new System.Windows.Forms.Button();
-            this.btnLift2_15_16 = new System.Windows.Forms.Button();
-            this.btnLift1_15_16 = new System.Windows.Forms.Button();
-            this.btnLift3_14_15 = new System.Windows.Forms.Button();
-            this.btnLift2_14_15 = new System.Windows.Forms.Button();
-            this.btnLift1_14_15 = new System.Windows.Forms.Button();
-            this.btnLift3_13_14 = new System.Windows.Forms.Button();
-            this.btnLift2_13_14 = new System.Windows.Forms.Button();
-            this.btnLift1_13_14 = new System.Windows.Forms.Button();
-            this.btnLift3_11_12 = new System.Windows.Forms.Button();
-            this.btnLift2_11_12 = new System.Windows.Forms.Button();
-            this.btnLift1_11_12 = new System.Windows.Forms.Button();
-            this.btnLift3_10_11 = new System.Windows.Forms.Button();
-            this.btnLift2_10_11 = new System.Windows.Forms.Button();
-            this.btnLift1_10_11 = new System.Windows.Forms.Button();
-            this.btnLift3_9_10 = new System.Windows.Forms.Button();
-            this.btnLift2_9_10 = new System.Windows.Forms.Button();
+            this.grpLift1 = new System.Windows.Forms.GroupBox();
             this.btnLift1_9_10 = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
+            this.btnLift1_10_11 = new System.Windows.Forms.Button();
+            this.btnLift1_11_12 = new System.Windows.Forms.Button();
+            this.btnLift1_13_14 = new System.Windows.Forms.Button();
+            this.btnLift1_14_15 = new System.Windows.Forms.Button();
+            this.btnLift1_15_16 = new System.Windows.Forms.Button();
+            this.btnLift1_16_17 = new System.Windows.Forms.Button();
+            this.btnLift1_17_18 = new System.Windows.Forms.Button();
+            this.grpLift3 = new System.Windows.Forms.GroupBox();
+            this.btnLift3_9_10 = new System.Windows.Forms.Button();
+            this.btnLift3_10_11 = new System.Windows.Forms.Button();
+            this.btnLift3_11_12 = new System.Windows.Forms.Button();
+            this.btnLift3_13_14 = new System.Windows.Forms.Button();
+            this.btnLift3_14_15 = new System.Windows.Forms.Button();
+            this.btnLift3_15_16 = new System.Windows.Forms.Button();
+            this.btnLift3_16_17 = new System.Windows.Forms.Button();
+            this.btnLift3_17_18 = new System.Windows.Forms.Button();
+            this.grpLift2 = new System.Windows.Forms.GroupBox();
+            this.btnLift2_9_10 = new System.Windows.Forms.Button();
+            this.btnLift2_10_11 = new System.Windows.Forms.Button();
+            this.btnLift2_11_12 = new System.Windows.Forms.Button();
+            this.btnLift2_13_14 = new System.Windows.Forms.Button();
+            this.btnLift2_14_15 = new System.Windows.Forms.Button();
+            this.btnLift2_15_16 = new System.Windows.Forms.Button();
+            this.btnLift2_16_17 = new System.Windows.Forms.Button();
+            this.btnLift2_17_18 = new System.Windows.Forms.Button();
+            this.btnKaydet = new System.Windows.Forms.Button();
+            this.dtpRandevuGunu = new System.Windows.Forms.DateTimePicker();
             this.pnlArac = new System.Windows.Forms.Panel();
             this.txtYapilacakIslemler = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -100,12 +102,12 @@
             this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
-            this.lblLift1 = new System.Windows.Forms.Label();
-            this.lblLift2 = new System.Windows.Forms.Label();
-            this.lblLift3 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.grpLift1.SuspendLayout();
+            this.grpLift3.SuspendLayout();
+            this.grpLift2.SuspendLayout();
             this.pnlArac.SuspendLayout();
             this.pnlMusteri.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -140,40 +142,312 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(224)))), ((int)(((byte)(237)))));
-            this.panel1.Controls.Add(this.lblLift3);
-            this.panel1.Controls.Add(this.lblLift2);
-            this.panel1.Controls.Add(this.lblLift1);
+            this.panel1.Controls.Add(this.grpLift1);
+            this.panel1.Controls.Add(this.grpLift3);
+            this.panel1.Controls.Add(this.grpLift2);
             this.panel1.Controls.Add(this.btnKaydet);
-            this.panel1.Controls.Add(this.dateTime);
-            this.panel1.Controls.Add(this.btnLift3_17_18);
-            this.panel1.Controls.Add(this.btnLift2_17_18);
-            this.panel1.Controls.Add(this.btnLift1_17_18);
-            this.panel1.Controls.Add(this.btnLift3_16_17);
-            this.panel1.Controls.Add(this.btnLift2_16_17);
-            this.panel1.Controls.Add(this.btnLift1_16_17);
-            this.panel1.Controls.Add(this.btnLift3_15_16);
-            this.panel1.Controls.Add(this.btnLift2_15_16);
-            this.panel1.Controls.Add(this.btnLift1_15_16);
-            this.panel1.Controls.Add(this.btnLift3_14_15);
-            this.panel1.Controls.Add(this.btnLift2_14_15);
-            this.panel1.Controls.Add(this.btnLift1_14_15);
-            this.panel1.Controls.Add(this.btnLift3_13_14);
-            this.panel1.Controls.Add(this.btnLift2_13_14);
-            this.panel1.Controls.Add(this.btnLift1_13_14);
-            this.panel1.Controls.Add(this.btnLift3_11_12);
-            this.panel1.Controls.Add(this.btnLift2_11_12);
-            this.panel1.Controls.Add(this.btnLift1_11_12);
-            this.panel1.Controls.Add(this.btnLift3_10_11);
-            this.panel1.Controls.Add(this.btnLift2_10_11);
-            this.panel1.Controls.Add(this.btnLift1_10_11);
-            this.panel1.Controls.Add(this.btnLift3_9_10);
-            this.panel1.Controls.Add(this.btnLift2_9_10);
-            this.panel1.Controls.Add(this.btnLift1_9_10);
-            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.dtpRandevuGunu);
             this.panel1.Location = new System.Drawing.Point(398, 6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(870, 622);
             this.panel1.TabIndex = 9;
+            // 
+            // grpLift1
+            // 
+            this.grpLift1.Controls.Add(this.btnLift1_9_10);
+            this.grpLift1.Controls.Add(this.btnLift1_10_11);
+            this.grpLift1.Controls.Add(this.btnLift1_11_12);
+            this.grpLift1.Controls.Add(this.btnLift1_13_14);
+            this.grpLift1.Controls.Add(this.btnLift1_14_15);
+            this.grpLift1.Controls.Add(this.btnLift1_15_16);
+            this.grpLift1.Controls.Add(this.btnLift1_16_17);
+            this.grpLift1.Controls.Add(this.btnLift1_17_18);
+            this.grpLift1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.grpLift1.Location = new System.Drawing.Point(10, 27);
+            this.grpLift1.Name = "grpLift1";
+            this.grpLift1.Size = new System.Drawing.Size(818, 77);
+            this.grpLift1.TabIndex = 15;
+            this.grpLift1.TabStop = false;
+            this.grpLift1.Tag = "1";
+            this.grpLift1.Text = "LİFT 1";
+            // 
+            // btnLift1_9_10
+            // 
+            this.btnLift1_9_10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift1_9_10.Location = new System.Drawing.Point(176, 2);
+            this.btnLift1_9_10.Name = "btnLift1_9_10";
+            this.btnLift1_9_10.Size = new System.Drawing.Size(75, 75);
+            this.btnLift1_9_10.TabIndex = 6;
+            this.btnLift1_9_10.UseVisualStyleBackColor = true;
+            this.btnLift1_9_10.Click += new System.EventHandler(this.btnRandevuSaati_Click);
+            // 
+            // btnLift1_10_11
+            // 
+            this.btnLift1_10_11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift1_10_11.Location = new System.Drawing.Point(257, 2);
+            this.btnLift1_10_11.Name = "btnLift1_10_11";
+            this.btnLift1_10_11.Size = new System.Drawing.Size(75, 75);
+            this.btnLift1_10_11.TabIndex = 6;
+            this.btnLift1_10_11.UseVisualStyleBackColor = true;
+            this.btnLift1_10_11.Click += new System.EventHandler(this.btnRandevuSaati_Click);
+            // 
+            // btnLift1_11_12
+            // 
+            this.btnLift1_11_12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift1_11_12.Location = new System.Drawing.Point(338, 2);
+            this.btnLift1_11_12.Name = "btnLift1_11_12";
+            this.btnLift1_11_12.Size = new System.Drawing.Size(75, 75);
+            this.btnLift1_11_12.TabIndex = 6;
+            this.btnLift1_11_12.UseVisualStyleBackColor = true;
+            this.btnLift1_11_12.Click += new System.EventHandler(this.btnRandevuSaati_Click);
+            // 
+            // btnLift1_13_14
+            // 
+            this.btnLift1_13_14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift1_13_14.Location = new System.Drawing.Point(419, 2);
+            this.btnLift1_13_14.Name = "btnLift1_13_14";
+            this.btnLift1_13_14.Size = new System.Drawing.Size(75, 75);
+            this.btnLift1_13_14.TabIndex = 6;
+            this.btnLift1_13_14.UseVisualStyleBackColor = true;
+            this.btnLift1_13_14.Click += new System.EventHandler(this.btnRandevuSaati_Click);
+            // 
+            // btnLift1_14_15
+            // 
+            this.btnLift1_14_15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift1_14_15.Location = new System.Drawing.Point(500, 2);
+            this.btnLift1_14_15.Name = "btnLift1_14_15";
+            this.btnLift1_14_15.Size = new System.Drawing.Size(75, 75);
+            this.btnLift1_14_15.TabIndex = 6;
+            this.btnLift1_14_15.UseVisualStyleBackColor = true;
+            this.btnLift1_14_15.Click += new System.EventHandler(this.btnRandevuSaati_Click);
+            // 
+            // btnLift1_15_16
+            // 
+            this.btnLift1_15_16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift1_15_16.Location = new System.Drawing.Point(581, 2);
+            this.btnLift1_15_16.Name = "btnLift1_15_16";
+            this.btnLift1_15_16.Size = new System.Drawing.Size(75, 75);
+            this.btnLift1_15_16.TabIndex = 6;
+            this.btnLift1_15_16.UseVisualStyleBackColor = true;
+            this.btnLift1_15_16.Click += new System.EventHandler(this.btnRandevuSaati_Click);
+            // 
+            // btnLift1_16_17
+            // 
+            this.btnLift1_16_17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift1_16_17.Location = new System.Drawing.Point(662, 2);
+            this.btnLift1_16_17.Name = "btnLift1_16_17";
+            this.btnLift1_16_17.Size = new System.Drawing.Size(75, 75);
+            this.btnLift1_16_17.TabIndex = 6;
+            this.btnLift1_16_17.UseVisualStyleBackColor = true;
+            this.btnLift1_16_17.Click += new System.EventHandler(this.btnRandevuSaati_Click);
+            // 
+            // btnLift1_17_18
+            // 
+            this.btnLift1_17_18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift1_17_18.Location = new System.Drawing.Point(743, 2);
+            this.btnLift1_17_18.Name = "btnLift1_17_18";
+            this.btnLift1_17_18.Size = new System.Drawing.Size(75, 75);
+            this.btnLift1_17_18.TabIndex = 6;
+            this.btnLift1_17_18.UseVisualStyleBackColor = true;
+            this.btnLift1_17_18.Click += new System.EventHandler(this.btnRandevuSaati_Click);
+            // 
+            // grpLift3
+            // 
+            this.grpLift3.Controls.Add(this.btnLift3_9_10);
+            this.grpLift3.Controls.Add(this.btnLift3_10_11);
+            this.grpLift3.Controls.Add(this.btnLift3_11_12);
+            this.grpLift3.Controls.Add(this.btnLift3_13_14);
+            this.grpLift3.Controls.Add(this.btnLift3_14_15);
+            this.grpLift3.Controls.Add(this.btnLift3_15_16);
+            this.grpLift3.Controls.Add(this.btnLift3_16_17);
+            this.grpLift3.Controls.Add(this.btnLift3_17_18);
+            this.grpLift3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.grpLift3.Location = new System.Drawing.Point(10, 190);
+            this.grpLift3.Name = "grpLift3";
+            this.grpLift3.Size = new System.Drawing.Size(818, 86);
+            this.grpLift3.TabIndex = 14;
+            this.grpLift3.TabStop = false;
+            this.grpLift3.Tag = "3";
+            this.grpLift3.Text = "LİFT 3";
+            // 
+            // btnLift3_9_10
+            // 
+            this.btnLift3_9_10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift3_9_10.Location = new System.Drawing.Point(176, 0);
+            this.btnLift3_9_10.Name = "btnLift3_9_10";
+            this.btnLift3_9_10.Size = new System.Drawing.Size(75, 75);
+            this.btnLift3_9_10.TabIndex = 6;
+            this.btnLift3_9_10.UseVisualStyleBackColor = true;
+            this.btnLift3_9_10.Click += new System.EventHandler(this.btnRandevuSaati_Click);
+            // 
+            // btnLift3_10_11
+            // 
+            this.btnLift3_10_11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift3_10_11.Location = new System.Drawing.Point(257, 0);
+            this.btnLift3_10_11.Name = "btnLift3_10_11";
+            this.btnLift3_10_11.Size = new System.Drawing.Size(75, 75);
+            this.btnLift3_10_11.TabIndex = 6;
+            this.btnLift3_10_11.UseVisualStyleBackColor = true;
+            this.btnLift3_10_11.Click += new System.EventHandler(this.btnRandevuSaati_Click);
+            // 
+            // btnLift3_11_12
+            // 
+            this.btnLift3_11_12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift3_11_12.Location = new System.Drawing.Point(338, 0);
+            this.btnLift3_11_12.Name = "btnLift3_11_12";
+            this.btnLift3_11_12.Size = new System.Drawing.Size(75, 75);
+            this.btnLift3_11_12.TabIndex = 6;
+            this.btnLift3_11_12.UseVisualStyleBackColor = true;
+            this.btnLift3_11_12.Click += new System.EventHandler(this.btnRandevuSaati_Click);
+            // 
+            // btnLift3_13_14
+            // 
+            this.btnLift3_13_14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift3_13_14.Location = new System.Drawing.Point(419, 0);
+            this.btnLift3_13_14.Name = "btnLift3_13_14";
+            this.btnLift3_13_14.Size = new System.Drawing.Size(75, 75);
+            this.btnLift3_13_14.TabIndex = 6;
+            this.btnLift3_13_14.UseVisualStyleBackColor = true;
+            this.btnLift3_13_14.Click += new System.EventHandler(this.btnRandevuSaati_Click);
+            // 
+            // btnLift3_14_15
+            // 
+            this.btnLift3_14_15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift3_14_15.Location = new System.Drawing.Point(500, 0);
+            this.btnLift3_14_15.Name = "btnLift3_14_15";
+            this.btnLift3_14_15.Size = new System.Drawing.Size(75, 75);
+            this.btnLift3_14_15.TabIndex = 6;
+            this.btnLift3_14_15.UseVisualStyleBackColor = true;
+            this.btnLift3_14_15.Click += new System.EventHandler(this.btnRandevuSaati_Click);
+            // 
+            // btnLift3_15_16
+            // 
+            this.btnLift3_15_16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift3_15_16.Location = new System.Drawing.Point(581, 0);
+            this.btnLift3_15_16.Name = "btnLift3_15_16";
+            this.btnLift3_15_16.Size = new System.Drawing.Size(75, 75);
+            this.btnLift3_15_16.TabIndex = 6;
+            this.btnLift3_15_16.UseVisualStyleBackColor = true;
+            this.btnLift3_15_16.Click += new System.EventHandler(this.btnRandevuSaati_Click);
+            // 
+            // btnLift3_16_17
+            // 
+            this.btnLift3_16_17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift3_16_17.Location = new System.Drawing.Point(662, 0);
+            this.btnLift3_16_17.Name = "btnLift3_16_17";
+            this.btnLift3_16_17.Size = new System.Drawing.Size(75, 75);
+            this.btnLift3_16_17.TabIndex = 6;
+            this.btnLift3_16_17.UseVisualStyleBackColor = true;
+            this.btnLift3_16_17.Click += new System.EventHandler(this.btnRandevuSaati_Click);
+            // 
+            // btnLift3_17_18
+            // 
+            this.btnLift3_17_18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift3_17_18.Location = new System.Drawing.Point(743, 0);
+            this.btnLift3_17_18.Name = "btnLift3_17_18";
+            this.btnLift3_17_18.Size = new System.Drawing.Size(75, 75);
+            this.btnLift3_17_18.TabIndex = 6;
+            this.btnLift3_17_18.UseVisualStyleBackColor = true;
+            this.btnLift3_17_18.Click += new System.EventHandler(this.btnRandevuSaati_Click);
+            // 
+            // grpLift2
+            // 
+            this.grpLift2.Controls.Add(this.btnLift2_9_10);
+            this.grpLift2.Controls.Add(this.btnLift2_10_11);
+            this.grpLift2.Controls.Add(this.btnLift2_11_12);
+            this.grpLift2.Controls.Add(this.btnLift2_13_14);
+            this.grpLift2.Controls.Add(this.btnLift2_14_15);
+            this.grpLift2.Controls.Add(this.btnLift2_15_16);
+            this.grpLift2.Controls.Add(this.btnLift2_16_17);
+            this.grpLift2.Controls.Add(this.btnLift2_17_18);
+            this.grpLift2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.grpLift2.Location = new System.Drawing.Point(10, 110);
+            this.grpLift2.Name = "grpLift2";
+            this.grpLift2.Size = new System.Drawing.Size(818, 76);
+            this.grpLift2.TabIndex = 14;
+            this.grpLift2.TabStop = false;
+            this.grpLift2.Tag = "2";
+            this.grpLift2.Text = "LİFT 2";
+            // 
+            // btnLift2_9_10
+            // 
+            this.btnLift2_9_10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift2_9_10.Location = new System.Drawing.Point(176, -1);
+            this.btnLift2_9_10.Name = "btnLift2_9_10";
+            this.btnLift2_9_10.Size = new System.Drawing.Size(75, 75);
+            this.btnLift2_9_10.TabIndex = 6;
+            this.btnLift2_9_10.UseVisualStyleBackColor = true;
+            this.btnLift2_9_10.Click += new System.EventHandler(this.btnRandevuSaati_Click);
+            // 
+            // btnLift2_10_11
+            // 
+            this.btnLift2_10_11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift2_10_11.Location = new System.Drawing.Point(257, -1);
+            this.btnLift2_10_11.Name = "btnLift2_10_11";
+            this.btnLift2_10_11.Size = new System.Drawing.Size(75, 75);
+            this.btnLift2_10_11.TabIndex = 6;
+            this.btnLift2_10_11.UseVisualStyleBackColor = true;
+            this.btnLift2_10_11.Click += new System.EventHandler(this.btnRandevuSaati_Click);
+            // 
+            // btnLift2_11_12
+            // 
+            this.btnLift2_11_12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift2_11_12.Location = new System.Drawing.Point(338, -1);
+            this.btnLift2_11_12.Name = "btnLift2_11_12";
+            this.btnLift2_11_12.Size = new System.Drawing.Size(75, 75);
+            this.btnLift2_11_12.TabIndex = 6;
+            this.btnLift2_11_12.UseVisualStyleBackColor = true;
+            this.btnLift2_11_12.Click += new System.EventHandler(this.btnRandevuSaati_Click);
+            // 
+            // btnLift2_13_14
+            // 
+            this.btnLift2_13_14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift2_13_14.Location = new System.Drawing.Point(419, 0);
+            this.btnLift2_13_14.Name = "btnLift2_13_14";
+            this.btnLift2_13_14.Size = new System.Drawing.Size(75, 75);
+            this.btnLift2_13_14.TabIndex = 6;
+            this.btnLift2_13_14.UseVisualStyleBackColor = true;
+            this.btnLift2_13_14.Click += new System.EventHandler(this.btnRandevuSaati_Click);
+            // 
+            // btnLift2_14_15
+            // 
+            this.btnLift2_14_15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift2_14_15.Location = new System.Drawing.Point(500, 0);
+            this.btnLift2_14_15.Name = "btnLift2_14_15";
+            this.btnLift2_14_15.Size = new System.Drawing.Size(75, 75);
+            this.btnLift2_14_15.TabIndex = 6;
+            this.btnLift2_14_15.UseVisualStyleBackColor = true;
+            this.btnLift2_14_15.Click += new System.EventHandler(this.btnRandevuSaati_Click);
+            // 
+            // btnLift2_15_16
+            // 
+            this.btnLift2_15_16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift2_15_16.Location = new System.Drawing.Point(581, 0);
+            this.btnLift2_15_16.Name = "btnLift2_15_16";
+            this.btnLift2_15_16.Size = new System.Drawing.Size(75, 75);
+            this.btnLift2_15_16.TabIndex = 6;
+            this.btnLift2_15_16.UseVisualStyleBackColor = true;
+            this.btnLift2_15_16.Click += new System.EventHandler(this.btnRandevuSaati_Click);
+            // 
+            // btnLift2_16_17
+            // 
+            this.btnLift2_16_17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift2_16_17.Location = new System.Drawing.Point(662, 0);
+            this.btnLift2_16_17.Name = "btnLift2_16_17";
+            this.btnLift2_16_17.Size = new System.Drawing.Size(75, 75);
+            this.btnLift2_16_17.TabIndex = 6;
+            this.btnLift2_16_17.UseVisualStyleBackColor = true;
+            this.btnLift2_16_17.Click += new System.EventHandler(this.btnRandevuSaati_Click);
+            // 
+            // btnLift2_17_18
+            // 
+            this.btnLift2_17_18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLift2_17_18.Location = new System.Drawing.Point(743, 0);
+            this.btnLift2_17_18.Name = "btnLift2_17_18";
+            this.btnLift2_17_18.Size = new System.Drawing.Size(75, 75);
+            this.btnLift2_17_18.TabIndex = 6;
+            this.btnLift2_17_18.UseVisualStyleBackColor = true;
+            this.btnLift2_17_18.Click += new System.EventHandler(this.btnRandevuSaati_Click);
             // 
             // btnKaydet
             // 
@@ -188,264 +462,13 @@
             this.btnKaydet.UseVisualStyleBackColor = false;
             this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
-            // dateTime
+            // dtpRandevuGunu
             // 
-            this.dateTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.dateTime.Location = new System.Drawing.Point(290, 352);
-            this.dateTime.Name = "dateTime";
-            this.dateTime.Size = new System.Drawing.Size(274, 27);
-            this.dateTime.TabIndex = 6;
-            // 
-            // btnLift3_17_18
-            // 
-            this.btnLift3_17_18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnLift3_17_18.Location = new System.Drawing.Point(751, 215);
-            this.btnLift3_17_18.Name = "btnLift3_17_18";
-            this.btnLift3_17_18.Size = new System.Drawing.Size(75, 75);
-            this.btnLift3_17_18.TabIndex = 6;
-            this.btnLift3_17_18.Text = "17:00-18:00";
-            this.btnLift3_17_18.UseVisualStyleBackColor = true;
-            // 
-            // btnLift2_17_18
-            // 
-            this.btnLift2_17_18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnLift2_17_18.Location = new System.Drawing.Point(751, 135);
-            this.btnLift2_17_18.Name = "btnLift2_17_18";
-            this.btnLift2_17_18.Size = new System.Drawing.Size(75, 75);
-            this.btnLift2_17_18.TabIndex = 6;
-            this.btnLift2_17_18.Text = "17:00-18:00";
-            this.btnLift2_17_18.UseVisualStyleBackColor = true;
-            // 
-            // btnLift1_17_18
-            // 
-            this.btnLift1_17_18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnLift1_17_18.Location = new System.Drawing.Point(751, 55);
-            this.btnLift1_17_18.Name = "btnLift1_17_18";
-            this.btnLift1_17_18.Size = new System.Drawing.Size(75, 75);
-            this.btnLift1_17_18.TabIndex = 6;
-            this.btnLift1_17_18.Text = "17:00-18:00";
-            this.btnLift1_17_18.UseVisualStyleBackColor = true;
-            // 
-            // btnLift3_16_17
-            // 
-            this.btnLift3_16_17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnLift3_16_17.Location = new System.Drawing.Point(670, 215);
-            this.btnLift3_16_17.Name = "btnLift3_16_17";
-            this.btnLift3_16_17.Size = new System.Drawing.Size(75, 75);
-            this.btnLift3_16_17.TabIndex = 6;
-            this.btnLift3_16_17.Text = "16:00-17:00";
-            this.btnLift3_16_17.UseVisualStyleBackColor = true;
-            // 
-            // btnLift2_16_17
-            // 
-            this.btnLift2_16_17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnLift2_16_17.Location = new System.Drawing.Point(670, 135);
-            this.btnLift2_16_17.Name = "btnLift2_16_17";
-            this.btnLift2_16_17.Size = new System.Drawing.Size(75, 75);
-            this.btnLift2_16_17.TabIndex = 6;
-            this.btnLift2_16_17.Text = "16:00-17:00";
-            this.btnLift2_16_17.UseVisualStyleBackColor = true;
-            // 
-            // btnLift1_16_17
-            // 
-            this.btnLift1_16_17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnLift1_16_17.Location = new System.Drawing.Point(670, 55);
-            this.btnLift1_16_17.Name = "btnLift1_16_17";
-            this.btnLift1_16_17.Size = new System.Drawing.Size(75, 75);
-            this.btnLift1_16_17.TabIndex = 6;
-            this.btnLift1_16_17.Text = "16:00-17:00";
-            this.btnLift1_16_17.UseVisualStyleBackColor = true;
-            // 
-            // btnLift3_15_16
-            // 
-            this.btnLift3_15_16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnLift3_15_16.Location = new System.Drawing.Point(589, 215);
-            this.btnLift3_15_16.Name = "btnLift3_15_16";
-            this.btnLift3_15_16.Size = new System.Drawing.Size(75, 75);
-            this.btnLift3_15_16.TabIndex = 6;
-            this.btnLift3_15_16.Text = "15:00-16:00";
-            this.btnLift3_15_16.UseVisualStyleBackColor = true;
-            // 
-            // btnLift2_15_16
-            // 
-            this.btnLift2_15_16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnLift2_15_16.Location = new System.Drawing.Point(589, 135);
-            this.btnLift2_15_16.Name = "btnLift2_15_16";
-            this.btnLift2_15_16.Size = new System.Drawing.Size(75, 75);
-            this.btnLift2_15_16.TabIndex = 6;
-            this.btnLift2_15_16.Text = "15:00-16:00";
-            this.btnLift2_15_16.UseVisualStyleBackColor = true;
-            // 
-            // btnLift1_15_16
-            // 
-            this.btnLift1_15_16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnLift1_15_16.Location = new System.Drawing.Point(589, 55);
-            this.btnLift1_15_16.Name = "btnLift1_15_16";
-            this.btnLift1_15_16.Size = new System.Drawing.Size(75, 75);
-            this.btnLift1_15_16.TabIndex = 6;
-            this.btnLift1_15_16.Text = "15:00-16:00";
-            this.btnLift1_15_16.UseVisualStyleBackColor = true;
-            // 
-            // btnLift3_14_15
-            // 
-            this.btnLift3_14_15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnLift3_14_15.Location = new System.Drawing.Point(508, 215);
-            this.btnLift3_14_15.Name = "btnLift3_14_15";
-            this.btnLift3_14_15.Size = new System.Drawing.Size(75, 75);
-            this.btnLift3_14_15.TabIndex = 6;
-            this.btnLift3_14_15.Text = "14:00-15:00";
-            this.btnLift3_14_15.UseVisualStyleBackColor = true;
-            // 
-            // btnLift2_14_15
-            // 
-            this.btnLift2_14_15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnLift2_14_15.Location = new System.Drawing.Point(508, 135);
-            this.btnLift2_14_15.Name = "btnLift2_14_15";
-            this.btnLift2_14_15.Size = new System.Drawing.Size(75, 75);
-            this.btnLift2_14_15.TabIndex = 6;
-            this.btnLift2_14_15.Text = "14:00-15:00";
-            this.btnLift2_14_15.UseVisualStyleBackColor = true;
-            // 
-            // btnLift1_14_15
-            // 
-            this.btnLift1_14_15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnLift1_14_15.Location = new System.Drawing.Point(508, 55);
-            this.btnLift1_14_15.Name = "btnLift1_14_15";
-            this.btnLift1_14_15.Size = new System.Drawing.Size(75, 75);
-            this.btnLift1_14_15.TabIndex = 6;
-            this.btnLift1_14_15.Text = "14:00-15:00";
-            this.btnLift1_14_15.UseVisualStyleBackColor = true;
-            // 
-            // btnLift3_13_14
-            // 
-            this.btnLift3_13_14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnLift3_13_14.Location = new System.Drawing.Point(427, 215);
-            this.btnLift3_13_14.Name = "btnLift3_13_14";
-            this.btnLift3_13_14.Size = new System.Drawing.Size(75, 75);
-            this.btnLift3_13_14.TabIndex = 6;
-            this.btnLift3_13_14.Text = "13:00-14:00";
-            this.btnLift3_13_14.UseVisualStyleBackColor = true;
-            // 
-            // btnLift2_13_14
-            // 
-            this.btnLift2_13_14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnLift2_13_14.Location = new System.Drawing.Point(427, 135);
-            this.btnLift2_13_14.Name = "btnLift2_13_14";
-            this.btnLift2_13_14.Size = new System.Drawing.Size(75, 75);
-            this.btnLift2_13_14.TabIndex = 6;
-            this.btnLift2_13_14.Text = "13:00-14:00";
-            this.btnLift2_13_14.UseVisualStyleBackColor = true;
-            // 
-            // btnLift1_13_14
-            // 
-            this.btnLift1_13_14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnLift1_13_14.Location = new System.Drawing.Point(427, 55);
-            this.btnLift1_13_14.Name = "btnLift1_13_14";
-            this.btnLift1_13_14.Size = new System.Drawing.Size(75, 75);
-            this.btnLift1_13_14.TabIndex = 6;
-            this.btnLift1_13_14.Text = "13:00-14:00";
-            this.btnLift1_13_14.UseVisualStyleBackColor = true;
-            // 
-            // btnLift3_11_12
-            // 
-            this.btnLift3_11_12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnLift3_11_12.Location = new System.Drawing.Point(346, 214);
-            this.btnLift3_11_12.Name = "btnLift3_11_12";
-            this.btnLift3_11_12.Size = new System.Drawing.Size(75, 75);
-            this.btnLift3_11_12.TabIndex = 6;
-            this.btnLift3_11_12.Text = "11:00-12:00";
-            this.btnLift3_11_12.UseVisualStyleBackColor = true;
-            // 
-            // btnLift2_11_12
-            // 
-            this.btnLift2_11_12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnLift2_11_12.Location = new System.Drawing.Point(346, 134);
-            this.btnLift2_11_12.Name = "btnLift2_11_12";
-            this.btnLift2_11_12.Size = new System.Drawing.Size(75, 75);
-            this.btnLift2_11_12.TabIndex = 6;
-            this.btnLift2_11_12.Text = "11:00-12:00";
-            this.btnLift2_11_12.UseVisualStyleBackColor = true;
-            // 
-            // btnLift1_11_12
-            // 
-            this.btnLift1_11_12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnLift1_11_12.Location = new System.Drawing.Point(346, 54);
-            this.btnLift1_11_12.Name = "btnLift1_11_12";
-            this.btnLift1_11_12.Size = new System.Drawing.Size(75, 75);
-            this.btnLift1_11_12.TabIndex = 6;
-            this.btnLift1_11_12.Text = "11:00-12:00";
-            this.btnLift1_11_12.UseVisualStyleBackColor = true;
-            // 
-            // btnLift3_10_11
-            // 
-            this.btnLift3_10_11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnLift3_10_11.Location = new System.Drawing.Point(265, 214);
-            this.btnLift3_10_11.Name = "btnLift3_10_11";
-            this.btnLift3_10_11.Size = new System.Drawing.Size(75, 75);
-            this.btnLift3_10_11.TabIndex = 6;
-            this.btnLift3_10_11.Text = "10:00-11:00";
-            this.btnLift3_10_11.UseVisualStyleBackColor = true;
-            // 
-            // btnLift2_10_11
-            // 
-            this.btnLift2_10_11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnLift2_10_11.Location = new System.Drawing.Point(265, 134);
-            this.btnLift2_10_11.Name = "btnLift2_10_11";
-            this.btnLift2_10_11.Size = new System.Drawing.Size(75, 75);
-            this.btnLift2_10_11.TabIndex = 6;
-            this.btnLift2_10_11.Text = "10:00-11:00";
-            this.btnLift2_10_11.UseVisualStyleBackColor = true;
-            // 
-            // btnLift1_10_11
-            // 
-            this.btnLift1_10_11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnLift1_10_11.Location = new System.Drawing.Point(265, 54);
-            this.btnLift1_10_11.Name = "btnLift1_10_11";
-            this.btnLift1_10_11.Size = new System.Drawing.Size(75, 75);
-            this.btnLift1_10_11.TabIndex = 6;
-            this.btnLift1_10_11.Text = "10:00-11:00";
-            this.btnLift1_10_11.UseVisualStyleBackColor = true;
-            // 
-            // btnLift3_9_10
-            // 
-            this.btnLift3_9_10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnLift3_9_10.Location = new System.Drawing.Point(184, 214);
-            this.btnLift3_9_10.Name = "btnLift3_9_10";
-            this.btnLift3_9_10.Size = new System.Drawing.Size(75, 75);
-            this.btnLift3_9_10.TabIndex = 6;
-            this.btnLift3_9_10.Text = "09:00-10:00";
-            this.btnLift3_9_10.UseVisualStyleBackColor = true;
-            // 
-            // btnLift2_9_10
-            // 
-            this.btnLift2_9_10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnLift2_9_10.Location = new System.Drawing.Point(184, 134);
-            this.btnLift2_9_10.Name = "btnLift2_9_10";
-            this.btnLift2_9_10.Size = new System.Drawing.Size(75, 75);
-            this.btnLift2_9_10.TabIndex = 6;
-            this.btnLift2_9_10.Text = "09:00-10:00";
-            this.btnLift2_9_10.UseVisualStyleBackColor = true;
-            // 
-            // btnLift1_9_10
-            // 
-            this.btnLift1_9_10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnLift1_9_10.Location = new System.Drawing.Point(184, 54);
-            this.btnLift1_9_10.Name = "btnLift1_9_10";
-            this.btnLift1_9_10.Size = new System.Drawing.Size(75, 75);
-            this.btnLift1_9_10.TabIndex = 6;
-            this.btnLift1_9_10.Text = "09:00-10:00";
-            this.btnLift1_9_10.UseVisualStyleBackColor = true;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label10.Location = new System.Drawing.Point(369, 8);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(183, 22);
-            this.label10.TabIndex = 5;
-            this.label10.Text = "RANDEVU ZAMANI";
+            this.dtpRandevuGunu.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.dtpRandevuGunu.Location = new System.Drawing.Point(290, 352);
+            this.dtpRandevuGunu.Name = "dtpRandevuGunu";
+            this.dtpRandevuGunu.Size = new System.Drawing.Size(274, 27);
+            this.dtpRandevuGunu.TabIndex = 6;
             // 
             // pnlArac
             // 
@@ -597,8 +620,7 @@
             this.cmbAracModel.Location = new System.Drawing.Point(118, 200);
             this.cmbAracModel.Name = "cmbAracModel";
             this.cmbAracModel.Size = new System.Drawing.Size(248, 21);
-            this.cmbAracModel.TabIndex = 0;
-            this.cmbAracModel.SelectedIndexChanged += new System.EventHandler(this.cmbAracModel_SelectedIndexChanged);
+            this.cmbAracModel.TabIndex = 0;            
             // 
             // txtMusteriSoyadi
             // 
@@ -811,36 +833,6 @@
             this.fileSystemWatcher1.EnableRaisingEvents = true;
             this.fileSystemWatcher1.SynchronizingObject = this;
             // 
-            // lblLift1
-            // 
-            this.lblLift1.AutoSize = true;
-            this.lblLift1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30.4F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblLift1.Location = new System.Drawing.Point(3, 63);
-            this.lblLift1.Name = "lblLift1";
-            this.lblLift1.Size = new System.Drawing.Size(138, 47);
-            this.lblLift1.TabIndex = 11;
-            this.lblLift1.Text = "LİFT 1";
-            // 
-            // lblLift2
-            // 
-            this.lblLift2.AutoSize = true;
-            this.lblLift2.Font = new System.Drawing.Font("Microsoft Sans Serif", 30.4F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblLift2.Location = new System.Drawing.Point(3, 146);
-            this.lblLift2.Name = "lblLift2";
-            this.lblLift2.Size = new System.Drawing.Size(138, 47);
-            this.lblLift2.TabIndex = 12;
-            this.lblLift2.Text = "LİFT 2";
-            // 
-            // lblLift3
-            // 
-            this.lblLift3.AutoSize = true;
-            this.lblLift3.Font = new System.Drawing.Font("Microsoft Sans Serif", 30.4F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblLift3.Location = new System.Drawing.Point(0, 230);
-            this.lblLift3.Name = "lblLift3";
-            this.lblLift3.Size = new System.Drawing.Size(138, 47);
-            this.lblLift3.TabIndex = 13;
-            this.lblLift3.Text = "LİFT 3";
-            // 
             // frmRandevu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -854,7 +846,9 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.grpLift1.ResumeLayout(false);
+            this.grpLift3.ResumeLayout(false);
+            this.grpLift2.ResumeLayout(false);
             this.pnlArac.ResumeLayout(false);
             this.pnlArac.PerformLayout();
             this.pnlMusteri.ResumeLayout(false);
@@ -889,11 +883,10 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnKaydet;
-        private System.Windows.Forms.DateTimePicker dateTime;
+        private System.Windows.Forms.DateTimePicker dtpRandevuGunu;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.ComboBox cmbModelYili;
         private System.Windows.Forms.TextBox txtYapilacakIslemler;
@@ -916,33 +909,33 @@
         private System.Windows.Forms.Button btnTumRandevular;
         private System.Windows.Forms.Button btnLift3_17_18;
         private System.Windows.Forms.Button btnLift2_17_18;
-        private System.Windows.Forms.Button btnLift1_17_18;
-        private System.Windows.Forms.Button btnLift3_16_17;
+        private System.Windows.Forms.Button btnLift1_10_11;
+        private System.Windows.Forms.Button btnLift3_14_15;
         private System.Windows.Forms.Button btnLift2_16_17;
-        private System.Windows.Forms.Button btnLift1_16_17;
+        private System.Windows.Forms.Button btnLift1_17_18;
         private System.Windows.Forms.Button btnLift3_15_16;
         private System.Windows.Forms.Button btnLift2_15_16;
-        private System.Windows.Forms.Button btnLift1_15_16;
-        private System.Windows.Forms.Button btnLift3_14_15;
-        private System.Windows.Forms.Button btnLift2_14_15;
-        private System.Windows.Forms.Button btnLift1_14_15;
-        private System.Windows.Forms.Button btnLift3_13_14;
-        private System.Windows.Forms.Button btnLift2_13_14;
         private System.Windows.Forms.Button btnLift1_13_14;
-        private System.Windows.Forms.Button btnLift3_11_12;
-        private System.Windows.Forms.Button btnLift2_11_12;
+        private System.Windows.Forms.Button btnLift3_13_14;
+        private System.Windows.Forms.Button btnLift2_14_15;
         private System.Windows.Forms.Button btnLift1_11_12;
+        private System.Windows.Forms.Button btnLift3_11_12;
+        private System.Windows.Forms.Button btnLift2_13_14;
+        private System.Windows.Forms.Button btnLift1_16_17;
         private System.Windows.Forms.Button btnLift3_10_11;
-        private System.Windows.Forms.Button btnLift2_10_11;
-        private System.Windows.Forms.Button btnLift1_10_11;
+        private System.Windows.Forms.Button btnLift2_11_12;
+        private System.Windows.Forms.Button btnLift1_14_15;
         private System.Windows.Forms.Button btnLift3_9_10;
+        private System.Windows.Forms.Button btnLift2_10_11;
+        private System.Windows.Forms.Button btnLift1_15_16;
+        private System.Windows.Forms.Button btnLift3_16_17;
         private System.Windows.Forms.Button btnLift2_9_10;
-        private System.Windows.Forms.Button btnLift1_9_10;
         private System.Windows.Forms.ComboBox cmbAracModel;
         private System.Windows.Forms.TextBox txtCalisan;
-        private System.Windows.Forms.Label lblLift3;
-        private System.Windows.Forms.Label lblLift2;
-        private System.Windows.Forms.Label lblLift1;
+        private System.Windows.Forms.GroupBox grpLift3;
+        private System.Windows.Forms.GroupBox grpLift2;
+        private System.Windows.Forms.GroupBox grpLift1;
+        private System.Windows.Forms.Button btnLift1_9_10;
     }
 }
 

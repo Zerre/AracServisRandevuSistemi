@@ -11,7 +11,7 @@ namespace AracServisRandevuSistemi.Kutuphane
         public int calisanId { get; set; }
         public string calisanAdi { get; set; }
         public string soyadi { get; set; }
-        public int cepNo { get; set; }
+        public string cepNo { get; set; }
         public string sskNo { get; set; }
         public CalisanGorev gorev { get; set; }
     }
