@@ -1,4 +1,5 @@
-﻿
+﻿using AracServisRandevuSistemi.Data;
+using AracServisRandevuSistemi.Kutuphane;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,7 +9,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using AracServisRandevuSistemi.Data;
 
 namespace AracServisRandevuSistemi.WinForm
 {
@@ -20,7 +20,7 @@ namespace AracServisRandevuSistemi.WinForm
         }
 
         DataManager dataManager = new DataManager();
-        
+
         private void button1_Click(object sender, EventArgs e)
         {
             //dataManager.ModelYillariniEkle();
@@ -31,31 +31,22 @@ namespace AracServisRandevuSistemi.WinForm
 
         private void frmRandevu_Load(object sender, EventArgs e)
         {
-            foreach (var item in dataManager.aracMarkalariGetir())
+            foreach (var marka in dataManager.aracMarkalariGetir())
             {
-                cmbAracMarka.ValueMember = item.aracMarkaId.ToString();
-                cmbAracMarka.DisplayMember = item.markaAdi;
-                cmbAracMarka.Items.Add(item.markaAdi);
-                cmbAracMarka.SelectedValue = Convert.ToInt32( item.aracMarkaId);
-                foreach (var model in dataManager.aracModelleriGetir())
-                {
-                    if (model.markaId ==Convert.ToInt32( cmbAracMarka.SelectedValue))
-                    {
-                        cmbAracModel.Items.Add(model.modelAdi);
-                    }
-                }
-
+                cmbAracMarka.Items.Add(marka);
             }
+            //cmbAracMarka.DisplayMember = "MarkaName";
+            //cmbAracMarka.ValueMember = "MarkaId";
+            //cmbAracMarka.DataSource = dataManager.aracMarkalariGetir();
         }
 
-        private void cmbAracMarka_SelectedIndexChanged(object sender, EventArgs e)
+        private void cmbAracMarka_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            
-        }
+            AracMarka secilen = (AracMarka)cmbAracMarka.SelectedItem;
 
-        private void cmbAracModel_SelectedIndexChanged(object sender, EventArgs e)
-        {
-           
+            cmbAracModel.ValueMember = "ModelId";
+            cmbAracModel.DisplayMember = "ModelName";
+            cmbAracModel.DataSource = dataManager.aracModelleriGetir(secilen.aracMarkaId);
         }
     }
 }

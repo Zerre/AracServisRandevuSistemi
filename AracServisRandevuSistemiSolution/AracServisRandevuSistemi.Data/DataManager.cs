@@ -6,12 +6,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace AracServisRandevuSistemi.Data
 {
     public class DataManager
     {
-        private static string connectionString = "Data Source=DESKTOP-B17TCAO;Initial Catalog=AracServisRandevuSistemi;Integrated Security=True";
+        private static string connectionString = "Data Source=SamininMAkinesi;Initial Catalog=AracServisRandevuSistemi;Integrated Security=True";
 
         private static SqlConnection CreateConnection()
         {
@@ -70,43 +69,40 @@ namespace AracServisRandevuSistemi.Data
 
         public List<AracMarka> aracMarkalariGetir()
         {
-
             var aracListesi = new List<AracMarka>();
             using (var connection = CreateConnection())
             {
-                var command = new SqlCommand("SELECT * FROM AracMarka ",connection);
-                
+                var command = new SqlCommand("SELECT * FROM AracMarka ", connection);
+
 
                 using (var reader = command.ExecuteReader())
                 {
                     while (reader.Read())
                     {
-                        var arac = new AracMarka((int)reader["MarkaId"], reader["MarkaName"].ToString());
-                        aracListesi.Add(arac);
-                        
-
+                        AracMarka marka = new AracMarka();
+                        marka.aracMarkaId = (int)reader["MarkaId"];
+                        marka.markaAdi = reader["MarkaName"].ToString();
+                        aracListesi.Add(marka);
                     }
                 }
             }
             return aracListesi;
         }
-        public List<AracModel> aracModelleriGetir()
-        {
 
+        public List<AracModel> aracModelleriGetir(int MarkaId)
+        {
             var modelListesi = new List<AracModel>();
             using (var connection = CreateConnection())
             {
-                var command = new SqlCommand("SELECT * FROM AracModel ", connection);
-
+                var command = new SqlCommand("SELECT * FROM AracModel where MarkaID = @id", connection);
+                command.Parameters.AddWithValue("@id", MarkaId);
 
                 using (var reader = command.ExecuteReader())
                 {
                     while (reader.Read())
                     {
-                        var model = new AracModel((int)reader["ModelId"],(int)reader["MarkaID"], reader["ModelName"].ToString());
+                        var model = new AracModel((int)reader["ModelId"], reader["ModelName"].ToString());
                         modelListesi.Add(model);
-
-
                     }
                 }
             }
