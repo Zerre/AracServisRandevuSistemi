@@ -20,7 +20,7 @@ namespace AracServisRandevuSistemi.Kutuphane
 
         public override string ToString()
         {
-            return this.modelAdi; 
+            return this.modelAdi;
         }
     }
 }

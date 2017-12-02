@@ -31,11 +31,8 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.btnLift3 = new System.Windows.Forms.Button();
-            this.btnLift2 = new System.Windows.Forms.Button();
-            this.btnLift1 = new System.Windows.Forms.Button();
+            this.btnKaydet = new System.Windows.Forms.Button();
+            this.dateTime = new System.Windows.Forms.DateTimePicker();
             this.btnLift3_17_18 = new System.Windows.Forms.Button();
             this.btnLift2_17_18 = new System.Windows.Forms.Button();
             this.btnLift1_17_18 = new System.Windows.Forms.Button();
@@ -62,7 +59,7 @@
             this.btnLift1_9_10 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.pnlArac = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtYapilacakIslemler = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.pnlMusteri = new System.Windows.Forms.Panel();
             this.txtCalisan = new System.Windows.Forms.TextBox();
@@ -73,7 +70,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbModelYili = new System.Windows.Forms.ComboBox();
             this.txtMusteriAdi = new System.Windows.Forms.TextBox();
             this.cmbAracModel = new System.Windows.Forms.ComboBox();
             this.txtMusteriSoyadi = new System.Windows.Forms.TextBox();
@@ -103,6 +100,9 @@
             this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
+            this.lblLift1 = new System.Windows.Forms.Label();
+            this.lblLift2 = new System.Windows.Forms.Label();
+            this.lblLift3 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -140,11 +140,11 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(224)))), ((int)(((byte)(237)))));
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.dateTimePicker1);
-            this.panel1.Controls.Add(this.btnLift3);
-            this.panel1.Controls.Add(this.btnLift2);
-            this.panel1.Controls.Add(this.btnLift1);
+            this.panel1.Controls.Add(this.lblLift3);
+            this.panel1.Controls.Add(this.lblLift2);
+            this.panel1.Controls.Add(this.lblLift1);
+            this.panel1.Controls.Add(this.btnKaydet);
+            this.panel1.Controls.Add(this.dateTime);
             this.panel1.Controls.Add(this.btnLift3_17_18);
             this.panel1.Controls.Add(this.btnLift2_17_18);
             this.panel1.Controls.Add(this.btnLift1_17_18);
@@ -175,55 +175,26 @@
             this.panel1.Size = new System.Drawing.Size(870, 622);
             this.panel1.TabIndex = 9;
             // 
-            // button1
+            // btnKaydet
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(103)))), ((int)(((byte)(178)))));
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(247, 442);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(350, 60);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "KAYDET";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnKaydet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(103)))), ((int)(((byte)(178)))));
+            this.btnKaydet.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnKaydet.Location = new System.Drawing.Point(247, 442);
+            this.btnKaydet.Name = "btnKaydet";
+            this.btnKaydet.Size = new System.Drawing.Size(350, 60);
+            this.btnKaydet.TabIndex = 10;
+            this.btnKaydet.Tag = "lift";
+            this.btnKaydet.Text = "KAYDET";
+            this.btnKaydet.UseVisualStyleBackColor = false;
+            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
-            // dateTimePicker1
+            // dateTime
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(290, 352);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(274, 27);
-            this.dateTimePicker1.TabIndex = 6;
-            // 
-            // btnLift3
-            // 
-            this.btnLift3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnLift3.Location = new System.Drawing.Point(3, 214);
-            this.btnLift3.Name = "btnLift3";
-            this.btnLift3.Size = new System.Drawing.Size(157, 75);
-            this.btnLift3.TabIndex = 7;
-            this.btnLift3.Text = "LİFT 3";
-            this.btnLift3.UseVisualStyleBackColor = true;
-            // 
-            // btnLift2
-            // 
-            this.btnLift2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnLift2.Location = new System.Drawing.Point(3, 134);
-            this.btnLift2.Name = "btnLift2";
-            this.btnLift2.Size = new System.Drawing.Size(157, 75);
-            this.btnLift2.TabIndex = 7;
-            this.btnLift2.Text = "LİFT 2";
-            this.btnLift2.UseVisualStyleBackColor = true;
-            // 
-            // btnLift1
-            // 
-            this.btnLift1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnLift1.Location = new System.Drawing.Point(3, 54);
-            this.btnLift1.Name = "btnLift1";
-            this.btnLift1.Size = new System.Drawing.Size(157, 75);
-            this.btnLift1.TabIndex = 7;
-            this.btnLift1.Text = "LİFT 1";
-            this.btnLift1.UseVisualStyleBackColor = true;
+            this.dateTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.dateTime.Location = new System.Drawing.Point(290, 352);
+            this.dateTime.Name = "dateTime";
+            this.dateTime.Size = new System.Drawing.Size(274, 27);
+            this.dateTime.TabIndex = 6;
             // 
             // btnLift3_17_18
             // 
@@ -479,7 +450,7 @@
             // pnlArac
             // 
             this.pnlArac.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(224)))), ((int)(((byte)(237)))));
-            this.pnlArac.Controls.Add(this.textBox1);
+            this.pnlArac.Controls.Add(this.txtYapilacakIslemler);
             this.pnlArac.Controls.Add(this.label9);
             this.pnlArac.Location = new System.Drawing.Point(8, 320);
             this.pnlArac.Name = "pnlArac";
@@ -487,14 +458,14 @@
             this.pnlArac.TabIndex = 8;
             this.pnlArac.Tag = "";
             // 
-            // textBox1
+            // txtYapilacakIslemler
             // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.textBox1.Location = new System.Drawing.Point(0, 46);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(384, 262);
-            this.textBox1.TabIndex = 6;
+            this.txtYapilacakIslemler.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.txtYapilacakIslemler.Location = new System.Drawing.Point(0, 46);
+            this.txtYapilacakIslemler.Multiline = true;
+            this.txtYapilacakIslemler.Name = "txtYapilacakIslemler";
+            this.txtYapilacakIslemler.Size = new System.Drawing.Size(384, 262);
+            this.txtYapilacakIslemler.TabIndex = 6;
             // 
             // label9
             // 
@@ -518,7 +489,7 @@
             this.pnlMusteri.Controls.Add(this.label5);
             this.pnlMusteri.Controls.Add(this.label4);
             this.pnlMusteri.Controls.Add(this.label6);
-            this.pnlMusteri.Controls.Add(this.comboBox1);
+            this.pnlMusteri.Controls.Add(this.cmbModelYili);
             this.pnlMusteri.Controls.Add(this.txtMusteriAdi);
             this.pnlMusteri.Controls.Add(this.cmbAracModel);
             this.pnlMusteri.Controls.Add(this.txtMusteriSoyadi);
@@ -605,13 +576,13 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "Arac Markası:";
             // 
-            // comboBox1
+            // cmbModelYili
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(118, 230);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(248, 21);
-            this.comboBox1.TabIndex = 0;
+            this.cmbModelYili.FormattingEnabled = true;
+            this.cmbModelYili.Location = new System.Drawing.Point(118, 230);
+            this.cmbModelYili.Name = "cmbModelYili";
+            this.cmbModelYili.Size = new System.Drawing.Size(248, 21);
+            this.cmbModelYili.TabIndex = 0;
             // 
             // txtMusteriAdi
             // 
@@ -627,6 +598,7 @@
             this.cmbAracModel.Name = "cmbAracModel";
             this.cmbAracModel.Size = new System.Drawing.Size(248, 21);
             this.cmbAracModel.TabIndex = 0;
+            this.cmbAracModel.SelectedIndexChanged += new System.EventHandler(this.cmbAracModel_SelectedIndexChanged);
             // 
             // txtMusteriSoyadi
             // 
@@ -642,7 +614,7 @@
             this.cmbAracMarka.Name = "cmbAracMarka";
             this.cmbAracMarka.Size = new System.Drawing.Size(248, 21);
             this.cmbAracMarka.TabIndex = 0;
-            this.cmbAracMarka.SelectionChangeCommitted += new System.EventHandler(this.cmbAracMarka_SelectionChangeCommitted);
+            this.cmbAracMarka.SelectedIndexChanged += new System.EventHandler(this.cmbAracMarka_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -839,6 +811,36 @@
             this.fileSystemWatcher1.EnableRaisingEvents = true;
             this.fileSystemWatcher1.SynchronizingObject = this;
             // 
+            // lblLift1
+            // 
+            this.lblLift1.AutoSize = true;
+            this.lblLift1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30.4F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblLift1.Location = new System.Drawing.Point(3, 63);
+            this.lblLift1.Name = "lblLift1";
+            this.lblLift1.Size = new System.Drawing.Size(138, 47);
+            this.lblLift1.TabIndex = 11;
+            this.lblLift1.Text = "LİFT 1";
+            // 
+            // lblLift2
+            // 
+            this.lblLift2.AutoSize = true;
+            this.lblLift2.Font = new System.Drawing.Font("Microsoft Sans Serif", 30.4F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblLift2.Location = new System.Drawing.Point(3, 146);
+            this.lblLift2.Name = "lblLift2";
+            this.lblLift2.Size = new System.Drawing.Size(138, 47);
+            this.lblLift2.TabIndex = 12;
+            this.lblLift2.Text = "LİFT 2";
+            // 
+            // lblLift3
+            // 
+            this.lblLift3.AutoSize = true;
+            this.lblLift3.Font = new System.Drawing.Font("Microsoft Sans Serif", 30.4F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblLift3.Location = new System.Drawing.Point(0, 230);
+            this.lblLift3.Name = "lblLift3";
+            this.lblLift3.Size = new System.Drawing.Size(138, 47);
+            this.lblLift3.TabIndex = 13;
+            this.lblLift3.Text = "LİFT 3";
+            // 
             // frmRandevu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -890,11 +892,11 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button btnKaydet;
+        private System.Windows.Forms.DateTimePicker dateTime;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox cmbModelYili;
+        private System.Windows.Forms.TextBox txtYapilacakIslemler;
         private System.Windows.Forms.ListView lstVwRandevuAra;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
@@ -912,9 +914,6 @@
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button btnTumRandevular;
-        private System.Windows.Forms.Button btnLift3;
-        private System.Windows.Forms.Button btnLift2;
-        private System.Windows.Forms.Button btnLift1;
         private System.Windows.Forms.Button btnLift3_17_18;
         private System.Windows.Forms.Button btnLift2_17_18;
         private System.Windows.Forms.Button btnLift1_17_18;
@@ -941,6 +940,9 @@
         private System.Windows.Forms.Button btnLift1_9_10;
         private System.Windows.Forms.ComboBox cmbAracModel;
         private System.Windows.Forms.TextBox txtCalisan;
+        private System.Windows.Forms.Label lblLift3;
+        private System.Windows.Forms.Label lblLift2;
+        private System.Windows.Forms.Label lblLift1;
     }
 }
 

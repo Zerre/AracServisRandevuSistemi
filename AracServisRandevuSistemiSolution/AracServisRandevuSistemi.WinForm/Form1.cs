@@ -21,32 +21,28 @@ namespace AracServisRandevuSistemi.WinForm
 
         DataManager dataManager = new DataManager();
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            //dataManager.ModelYillariniEkle();
-            //MessageBox.Show("Yıllar Eklendi..");
-
-
-        }
-
         private void frmRandevu_Load(object sender, EventArgs e)
         {
-            foreach (var marka in dataManager.aracMarkalariGetir())
-            {
-                cmbAracMarka.Items.Add(marka);
-            }
-            //cmbAracMarka.DisplayMember = "MarkaName";
-            //cmbAracMarka.ValueMember = "MarkaId";
-            //cmbAracMarka.DataSource = dataManager.aracMarkalariGetir();
+            cmbAracMarka.DataSource = dataManager.aracMarkalariGetir();
+            cmbAracMarka.SelectedItem = 0;
+            cmbModelYili.DataSource = dataManager.modelYiliGetir();
+            cmbModelYili.SelectedIndex = 3;
         }
 
-        private void cmbAracMarka_SelectionChangeCommitted(object sender, EventArgs e)
+        private void cmbAracMarka_SelectedIndexChanged(object sender, EventArgs e)
         {
-            AracMarka secilen = (AracMarka)cmbAracMarka.SelectedItem;
+            AracMarka secilenAracMarka = (AracMarka)cmbAracMarka.SelectedItem;
+            cmbAracModel.DataSource = dataManager.aracModelleriGetir(secilenAracMarka.aracMarkaId);
+        }
 
-            cmbAracModel.ValueMember = "ModelId";
-            cmbAracModel.DisplayMember = "ModelName";
-            cmbAracModel.DataSource = dataManager.aracModelleriGetir(secilen.aracMarkaId);
+        private void cmbAracModel_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            AracModel secilenAracModel = (AracModel)cmbAracModel.SelectedItem;
+        }
+
+        private void btnKaydet_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
