@@ -30,6 +30,46 @@ namespace AracServisRandevuSistemi.WinForm
             cmbModelYili.DataSource = dataManager.modelYiliGetir();
             cmbModelYili.SelectedIndex = 3;
 
+            int grpLocationX = 10, grpLocationY = 27;
+            int btnLocationX = 95, btnLocationY = 1;
+            bool Renk = true;
+            foreach (var lift in dataManager.LiftleriGetir())
+            {
+                GroupBox grpLift = new GroupBox();
+                grpLift.Name = lift.liftAdi;
+                grpLift.Text = lift.liftAdi.ToUpper();
+                grpLift.Tag = lift;
+                grpLift.Font = new Font("Microsoft Sans Serif", 13, FontStyle.Bold);                
+                grpLift.Size = new Size(818, 77);
+                grpLift.Location = new Point(grpLocationX, grpLocationY);
+                grpLocationY += grpLift.Height + 5;
+                foreach (var saat in dataManager.saatleriGetir())
+                {
+                    Button btnSaat = new Button();
+                    btnSaat.Name = "btn_" + saat.randevuSaat;
+                    btnSaat.Text = saat.randevuSaat;
+                    btnSaat.Tag = saat;
+                    btnSaat.Font = new Font("Microsoft Sans Serif", 8);
+                    if (Renk)
+                    {
+                        btnSaat.ForeColor = Color.OrangeRed;
+                        Renk = false;
+                    }
+                    else
+                    {
+                        btnSaat.ForeColor = Color.DarkBlue;
+                        Renk = true;
+                    }
+                    btnSaat.Size = new Size((grpLift.Width-95-(dataManager.saatleriGetir().Count*5))/dataManager.saatleriGetir().Count, 75);
+                    btnSaat.Location = new Point(btnLocationX, btnLocationY);
+                    btnLocationX += btnSaat.Width + 5;
+                    btnSaat.Click += btnRandevuSaati_Click;
+                    grpLift.Controls.Add(btnSaat);
+                }
+                btnLocationX = 95;
+                pnlZaman.Controls.Add(grpLift);
+            }
+
             for (int i = 0; i < grpLift1.Controls.Count; i++)
             {
                 grpLift1.Controls[i].Tag = dataManager.saatleriGetir()[i];
@@ -54,8 +94,9 @@ namespace AracServisRandevuSistemi.WinForm
         private void btnRandevuSaati_Click(object sender, EventArgs e)
         {
             Button tiklananButon = sender as Button;
-            secilenSaat = (RandevuSaati)tiklananButon.Tag;            
-            secilenLift = (Lift)tiklananButon.Parent.Tag;            
+            secilenSaat = (RandevuSaati)tiklananButon.Tag;
+            secilenLift = (Lift)tiklananButon.Parent.Tag;
+            MessageBox.Show(tiklananButon.Text);
         }
 
         private void btnKaydet_Click(object sender, EventArgs e)
@@ -69,11 +110,13 @@ namespace AracServisRandevuSistemi.WinForm
             Lift lift = new Lift() { liftId = secilenLift.liftId, liftAdi = secilenLift.liftAdi };
 
             CalisanGorev calisanGorev = new CalisanGorev() { gorevId = 1, gorevAdi = "Usta" };
-            Calisan aktifCalisan = new Calisan() {calisanId = 1, calisanAdi = "Burak", soyadi = "K.", cepNo = "5553331122", gorev = calisanGorev };
+            Calisan aktifCalisan = new Calisan() { calisanId = 1, calisanAdi = "Burak", soyadi = "K.", cepNo = "5553331122", gorev = calisanGorev };
             Randevu randevu = new Randevu() { yapilacakIslem = txtYapilacakIslemler.Text, saatGectiMi = false, bakimYapildiMi = false, calisan = aktifCalisan };
 
-            dataManager.RandevuOlustur(musteri, musteri_Arac, randevuZamani, lift, randevu);
-            MessageBox.Show("Randevu Oluşturuldu");
+            if (dataManager.RandevuOlustur(musteri, musteri_Arac, randevuZamani, lift, randevu) > 0)
+            {
+                MessageBox.Show("Randevu Oluşturuldu");
+            }
         }
     }
 }

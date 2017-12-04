@@ -18,7 +18,7 @@ namespace AracServisRandevuSistemi.Data
             return connection;
         }
 
-        public void RandevuOlustur(Musteri musteri, Musteri_Arac musteri_Arac, RandevuZamani randevuZamani, Lift lift, Randevu randevu)
+        public int RandevuOlustur(Musteri musteri, Musteri_Arac musteri_Arac, RandevuZamani randevuZamani, Lift lift, Randevu randevu)
         {
             using (SqlConnection connection = CreateConnection())
             {
@@ -44,7 +44,8 @@ namespace AracServisRandevuSistemi.Data
                 command.Parameters.AddWithValue("@BakimYapildiMi", randevu.bakimYapildiMi);
                 command.Parameters.AddWithValue("@CalisanId", randevu.calisan.calisanId);
 
-                command.ExecuteNonQuery();
+                int sonuc = command.ExecuteNonQuery();
+                return sonuc;
             }
         }
 
@@ -125,7 +126,7 @@ namespace AracServisRandevuSistemi.Data
                         Lift lift = new Lift();
                         lift.liftId = (int)reader["LiftId"];
                         lift.liftAdi = reader["LiftAdi"].ToString();
-                        liftler.Add(lift); 
+                        liftler.Add(lift);
                     }
                 }
             }
@@ -147,12 +148,30 @@ namespace AracServisRandevuSistemi.Data
                         RandevuSaati saat = new RandevuSaati();
                         saat.randevuSaatId = (int)reader["RandevuSaatId"];
                         saat.randevuSaat = reader["RandevuSaati"].ToString();
-                        randevuSaatleri.Add(saat); 
+                        randevuSaatleri.Add(saat);
                     }
                 }
             }
             return randevuSaatleri;
         }
 
+        public int CalisanEkle(string adi, string soyadi, string cepNo, int gorevId, string kullaniciAdi, string sifre, bool yetki)
+        {
+            using (SqlConnection connection = CreateConnection())
+            {
+                SqlCommand command = new SqlCommand("CalisanEkle", connection);
+                command.CommandType = System.Data.CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@Adi", adi);
+                command.Parameters.AddWithValue("@Soyadi", soyadi);
+                command.Parameters.AddWithValue("@CepNo", cepNo);
+                command.Parameters.AddWithValue("@GorevId", gorevId);
+                command.Parameters.AddWithValue("@KullaniciAdi", kullaniciAdi);
+                command.Parameters.AddWithValue("@Sifre", sifre);
+                command.Parameters.AddWithValue("@Yetki", yetki);
+
+                int sonuc = command.ExecuteNonQuery();
+                return sonuc;
+            }
+        }
     }
 }
